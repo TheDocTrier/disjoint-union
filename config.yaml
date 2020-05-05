@@ -1,0 +1,19 @@
+publishdir: "docs"
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Disjoint Union"
+theme: "anubis"
+paginate: 10
+
+menu:
+  main:
+  - identifier: archive
+    name: Archive
+    title: Archive
+    url: /posts/
+    weight: 0
+
+params:
+  author: "Michael Bradley"
+  description: "An assortment of essays on interesting topics."
+  # images and custom css
