@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Disjoint Union</title>
-    <link>http://example.org/posts/</link>
+    <link>https://disjointunion.link/posts/</link>
     <description>Disjoint Union (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 May 2020 15:18:34 -0700</lastBuildDate>
     
-    <atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://disjointunion.link/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First Post</title>
-      <link>http://example.org/posts/first-post/</link>
+      <link>https://disjointunion.link/posts/first-post/</link>
       <pubDate>Tue, 05 May 2020 15:18:34 -0700</pubDate>
       
-      <guid>http://example.org/posts/first-post/</guid>
+      <guid>https://disjointunion.link/posts/first-post/</guid>
       <description>&lt;p&gt;This is the first post on &lt;em&gt;Disjoint Union&lt;/em&gt;.
 I haven&amp;rsquo;t finished deciding what should be posted here.&lt;/p&gt;
 </description>
