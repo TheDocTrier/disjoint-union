@@ -6,7 +6,7 @@
     <description>Disjoint Union (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2020 15:18:34 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://disjointunion.link/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,11 @@
     <item>
       <title>First Post</title>
       <link>https://disjointunion.link/posts/first-post/</link>
-      <pubDate>Tue, 05 May 2020 15:18:34 -0700</pubDate>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://disjointunion.link/posts/first-post/</guid>
-      <description>&lt;p&gt;This is the first post on &lt;em&gt;Disjoint Union&lt;/em&gt;.
-I haven&amp;rsquo;t finished deciding what should be posted here.&lt;/p&gt;
+      <description>&lt;p&gt;What did you expect?
+It&amp;rsquo;s boring.&lt;/p&gt;
 </description>
     </item>
     
