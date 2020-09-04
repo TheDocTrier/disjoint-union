@@ -1,7 +1,12 @@
 ---
 title: "Home"
-date: 2020-05-07T14:13:09-07:00
 draft: false
 ---
 
-This is some placeholder text until I find something meaningful to put here.
+# [You Must Read This Before Continuing (Click Here)](legal)
+
+This website is part personal blog and part utopian vision.
+
+You can view the complete history of every page on this website in the [git repository](https://github.com/TheDocTrier/disjoint-union).
+This site is a collaborative effort!
+If you see a mistake, file an issue or submit a pull request.

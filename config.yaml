@@ -7,13 +7,25 @@ paginate: 10
 
 menu:
   main:
-  - identifier: archive
-    name: Archive
-    title: Archive
-    url: /posts/
-    weight: 0
+    - identifier: archive
+      name: Archive
+      title: Archive
+      url: /posts/
+      weight: 0
 
 params:
   author: "Michael Bradley"
   description: "An assortment of essays on interesting topics."
   # images and custom css
+  customCSS:
+    - css/custom.css
+  style: auto
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+    ordered: false
+    endLevel: 3

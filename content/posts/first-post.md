@@ -1,8 +1,11 @@
 ---
 title: "First Post"
-date: 2020-05-05T15:18:34-07:00
+date: 2020-05-05
 draft: false
+summary: >
+    Does the first post always have to be boring?
+    Well this one is.
 ---
 
-This is the first post on *Disjoint Union*.
-I haven't finished deciding what should be posted here.
+What did you expect?
+It's boring.
