@@ -1,6 +1,6 @@
 ---
 title: "Formless Commissions"
-lastmod: 2020-09-03
+lastmod: 2020-09-04
 draft: false
 ---
 
@@ -31,7 +31,7 @@ If being responsible for coming up with an idea for the formless commission is t
 
 ## How to Use This Document
 
-If a donor would like to make a formless commission, they should contact you through the your recommended/advertised channels.
+If a donor would like to request a formless commission, they should contact you through your recommended/advertised channels.
 Then the donor should ask, with a link to this document, if you would be willing to take on a formless commission.
 
 ## License of this Text
@@ -41,3 +41,10 @@ If you think I missed something important, or that something could use a bit of 
 The text of this [*Formless Commissions*](https://disjointunion.link/formless/) document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 Feel free to use its terms in other documents if you want.
 However to avoid confusion, please do not name any derivatives of this document "Formless Commissions".
+
+## Why This Document
+
+I like the vision of a gift economy, despite how implausible its existence might be.
+I want to commission artists and participate in that process.
+But I don't want to force myself to come up with an idea that is likely to be subpar and uninspired.
+I already enjoy the work artists do outside of their regular commissions, so why not just pay for one of those.
