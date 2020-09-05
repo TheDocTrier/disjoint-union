@@ -1,2 +1,3 @@
 # stop mangling shortcodes
 layouts/shortcodes/*.html
+themes/*
