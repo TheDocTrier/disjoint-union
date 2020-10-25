@@ -14,6 +14,9 @@ Here is some common information that you'll probably see in multiple places on t
 * The website you are currently on, [Disjoint Union](https://disjointunion.link), is my personal (and official) writing depository.
 * My name is *Michael Bradley* and I live in the [Pacific Time Zone](https://en.wikipedia.org/wiki/Pacific_Time_Zone).
 * My web handle is typically `TheDocTrier` (post 2020, pronounced *try-ur*), however you may also see my decommissioned handle `Tankobot` (pre 2020).
+* My [current profile picture](/pfp.png) is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
+  * I chose it because while clearly not the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle), it still bears an peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).
+  * Indeed, Pascal's mod 6 is the intersection of [Pascal's mod 2](/images/pascal/mod2.png) (the Sierpiński) and [Pascal's mod 3](/images/pascal/mod3.png).
 
 ## Advocacy
 
