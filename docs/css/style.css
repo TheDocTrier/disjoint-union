@@ -343,7 +343,7 @@ article figcaption {
 }
 
 .read-more {
-    font-size: 0.85em;
+    margin: 1em 0;
 }
 
 .divider {
@@ -416,19 +416,22 @@ article figcaption {
     padding-top: 1.5em;
     margin-top: 3em;
     font-size: 16px;
+}
+
+.common-footer-bottom {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-ul.language-select {
+ul.language-select, ul.footer-menu {
     padding-left: 0;
     list-style: none;
     display: flex;
 }
 
-ul.language-select > li {
+ul.language-select > li, ul.footer-menu > li {
     margin-right: 1em;
 }
 
@@ -439,6 +442,7 @@ ul.language-select > li {
     font-size: 16px;
     border: none;
     margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 /* Media Queries */
@@ -470,7 +474,7 @@ ul.language-select > li {
         text-align: center;
     }
 
-    header nav {
+    header nav:not(:empty){
         background: var(--pagination-bg-color);
         margin-top: 1em;
         max-width: 100%;

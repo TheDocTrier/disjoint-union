@@ -16,7 +16,7 @@
 <link rel="icon" type="image/x-icon" href="https://disjointunion.link/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://disjointunion.link/favicon.png">
 
-<link rel="stylesheet" href="https://disjointunion.link/css/light.css?rnd=1599253010" />
+<link rel="stylesheet" href="https://disjointunion.link/css/light.css?rnd=1603633339" />
 <style>
 
     [data-theme="dark"] {   
@@ -48,9 +48,9 @@
 
 </style>
 
-<link rel="stylesheet" href="https://disjointunion.link/css/style.css?rnd=1599253010" />
+<link rel="stylesheet" href="https://disjointunion.link/css/style.css?rnd=1603633339" />
 
-<link rel="stylesheet" href="https://disjointunion.link/css/custom.css?rnd=1599253010">
+<link rel="stylesheet" href="https://disjointunion.link/css/custom.css?rnd=1603633339">
 
 
 
@@ -86,18 +86,20 @@ Here is some common information that you&rsquo;ll probably see in multiple place
                 <h1 class="site-title">
     <a href="/">Disjoint Union</a>
 </h1>
-<nav>
-    
-    
-    <a class=" active" href="https://disjointunion.link/about-me/" title="About Me">About Me</a>
-    
-    <a class="" href="https://disjointunion.link/posts/" title="Archive">Archive</a>
-    
-    <a class="" href="https://disjointunion.link/legal/" title="Legal">Legal</a>
-    
-    <a class="" href="https://disjointunion.link/start-here/" title="Start Here">Start Here</a>
-    
-</nav>
+
+    <nav>
+        
+        
+        <a class=" active" href="https://disjointunion.link/about-me/" title="About Me">About Me</a>
+        
+        <a class="" href="https://disjointunion.link/posts/" title="Archive">Archive</a>
+        
+        <a class="" href="https://disjointunion.link/legal/" title="Legal">Legal</a>
+        
+        <a class="" href="https://disjointunion.link/start-here/" title="Start Here">Start Here</a>
+        
+    </nav>
+
 
             
         </header>
@@ -124,6 +126,12 @@ Less officially: I am a programmer, a <a href="https://en.wikipedia.org/wiki/Hum
 <li>The website you are currently on, <a href="https://disjointunion.link">Disjoint Union</a>, is my personal (and official) writing depository.</li>
 <li>My name is <em>Michael Bradley</em> and I live in the <a href="https://en.wikipedia.org/wiki/Pacific_Time_Zone">Pacific Time Zone</a>.</li>
 <li>My web handle is typically <code>TheDocTrier</code> (post 2020, pronounced <em>try-ur</em>), however you may also see my decommissioned handle <code>Tankobot</code> (pre 2020).</li>
+<li>My <a href="/pfp.png">current profile picture</a> is the first 256 rows of <a href="https://en.wikipedia.org/wiki/Pascal%27s_triangle">Pascal&rsquo;s triangle</a> mod 6.
+<ul>
+<li>I chose it because while clearly not the <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle">Sierpiński triangle</a>, it still bears an peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).</li>
+<li>Indeed, Pascal&rsquo;s mod 6 is the intersection of <a href="/images/pascal/mod2.png">Pascal&rsquo;s mod 2</a> (the Sierpiński) and <a href="/images/pascal/mod3.png">Pascal&rsquo;s mod 3</a>.</li>
+</ul>
+</li>
 </ul>
 <h2 id="advocacy">Advocacy</h2>
 <p>I am a passionate supporter of the <a href="https://www.aclu.org">American Civil Liberties Union (ACLU)</a>, the <a href="https://www.eff.org">Electronic Frontier Foundation (EFF)</a>, and the <a href="https://www.fsf.org">Free Software Foundation (FSF)</a>.</p>
@@ -237,13 +245,15 @@ Be warned, there may be mature materials behind any of the links given.</p>
     
     
 
-    <div class="copyright">
-        <p>© Michael Bradley, 2020<br>
-        Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
-        </p>  
-    </div> 
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Michael Bradley, 2020<br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+            </p>  
+        </div> 
 
-    
+        
 
     
 
@@ -281,8 +291,6 @@ Be warned, there may be mature materials behind any of the links given.</p>
         switchButton.addEventListener('click', switchTheme, false)
     })
 
-
-
     function detectCurrentScheme() {
         if (localStorage.getItem(STORAGE_KEY)) {
             return localStorage.getItem(STORAGE_KEY)
@@ -300,9 +308,8 @@ Be warned, there may be mature materials behind any of the links given.</p>
     }
 
     function changeButtonText()
-    {
-        console.log(currentTheme)
-        switchButton.textContent = currentTheme == 'dark' ? 'Light theme' : 'Dark theme'
+    {   
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
     }
 
     function switchTheme(e) {
@@ -318,7 +325,8 @@ Be warned, there may be mature materials behind any of the links given.</p>
         changeButtonText()
     }
     </script>
-    
+   
+    </div>
 </footer>
 
         

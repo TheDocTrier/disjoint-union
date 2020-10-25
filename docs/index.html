@@ -11,14 +11,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
-<title>Home - Disjoint Union</title>
+<title>Disjoint Union</title>
 <meta name="description" content="An assortment of essays on interesting topics.">
 
 <link rel="alternate" type="application/rss+xml" href="https://disjointunion.link/index.xml" title="Disjoint Union" />
 <link rel="icon" type="image/x-icon" href="https://disjointunion.link/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://disjointunion.link/favicon.png">
 
-<link rel="stylesheet" href="https://disjointunion.link/css/light.css?rnd=1599253010" />
+<link rel="stylesheet" href="https://disjointunion.link/css/light.css?rnd=1603633339" />
 <style>
 
     [data-theme="dark"] {   
@@ -50,9 +50,9 @@
 
 </style>
 
-<link rel="stylesheet" href="https://disjointunion.link/css/style.css?rnd=1599253010" />
+<link rel="stylesheet" href="https://disjointunion.link/css/style.css?rnd=1603633339" />
 
-<link rel="stylesheet" href="https://disjointunion.link/css/custom.css?rnd=1599253010">
+<link rel="stylesheet" href="https://disjointunion.link/css/custom.css?rnd=1603633339">
 
 
 
@@ -83,18 +83,20 @@
                 <h1 class="site-title">
     <a href="/">Disjoint Union</a>
 </h1>
-<nav>
-    
-    
-    <a class="" href="https://disjointunion.link/about-me/" title="About Me">About Me</a>
-    
-    <a class="" href="https://disjointunion.link/posts/" title="Archive">Archive</a>
-    
-    <a class="" href="https://disjointunion.link/legal/" title="Legal">Legal</a>
-    
-    <a class="" href="https://disjointunion.link/start-here/" title="Start Here">Start Here</a>
-    
-</nav>
+
+    <nav>
+        
+        
+        <a class="" href="https://disjointunion.link/about-me/" title="About Me">About Me</a>
+        
+        <a class="" href="https://disjointunion.link/posts/" title="Archive">Archive</a>
+        
+        <a class="" href="https://disjointunion.link/legal/" title="Legal">Legal</a>
+        
+        <a class="" href="https://disjointunion.link/start-here/" title="Start Here">Start Here</a>
+        
+    </nav>
+
 
             
         </header>
@@ -119,7 +121,7 @@ If you see a mistake, file an issue or submit a pull request.</p>
     <div class="content post-summary">
         Does the first post always have to be boring? Well this one is.
     </div>
-
+    
     
     
 
@@ -139,19 +141,22 @@ If you see a mistake, file an issue or submit a pull request.</p>
     
 
 
+
         </main>
         
             <footer class="common-footer">
     
     
 
-    <div class="copyright">
-        <p>© Michael Bradley, 2020<br>
-        Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
-        </p>  
-    </div> 
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Michael Bradley, 2020<br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+            </p>  
+        </div> 
 
-    
+        
 
     
 
@@ -189,8 +194,6 @@ If you see a mistake, file an issue or submit a pull request.</p>
         switchButton.addEventListener('click', switchTheme, false)
     })
 
-
-
     function detectCurrentScheme() {
         if (localStorage.getItem(STORAGE_KEY)) {
             return localStorage.getItem(STORAGE_KEY)
@@ -208,9 +211,8 @@ If you see a mistake, file an issue or submit a pull request.</p>
     }
 
     function changeButtonText()
-    {
-        console.log(currentTheme)
-        switchButton.textContent = currentTheme == 'dark' ? 'Light theme' : 'Dark theme'
+    {   
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
     }
 
     function switchTheme(e) {
@@ -226,7 +228,8 @@ If you see a mistake, file an issue or submit a pull request.</p>
         changeButtonText()
     }
     </script>
-    
+   
+    </div>
 </footer>
 
         
