@@ -6,4 +6,4 @@ serve :
 
 .PHONY: clean
 clean :
-	find docs/ -mindepth 1 ! -name CNAME -delete
+	find docs/ resources/ -mindepth 1 ! -name CNAME -delete
