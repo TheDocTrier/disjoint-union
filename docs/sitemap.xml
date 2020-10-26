@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://disjointunion.link/</loc>
-    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://disjointunion.link/about-me/</loc>
     <lastmod>2020-08-19T00:00:00+00:00</lastmod>
   </url>
@@ -29,6 +24,11 @@
   
   <url>
     <loc>https://disjointunion.link/posts/first-post/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://disjointunion.link/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url>
   
