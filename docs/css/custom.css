@@ -6,3 +6,8 @@
 table {
   margin: 1em auto;
 }
+
+.note {
+  padding: 0.5em 1em;
+  background-color: var(--pagination-bg-color);
+}
