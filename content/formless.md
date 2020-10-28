@@ -4,7 +4,7 @@ lastmod: 2020-09-04
 draft: false
 ---
 
-A "formless commission" is a **donation**.
+A "formless commission" is a **donation**.<sup>[why?](#why-this-document)</sup>
 
 From the perspective of the artist, everything else in this document is merely **a suggestion, not an obligation**.
 This document will refer to the artist as "you" since artists are the most important readers here.
@@ -42,9 +42,13 @@ The text of this [*Formless Commissions*](https://disjointunion.link/formless/) 
 Feel free to use its terms in other documents if you want.
 However to avoid confusion, please do not name any derivatives of this document "Formless Commissions".
 
+<div class="note">
+
 ## Why This Document
 
-I like the vision of a gift economy, despite how implausible its existence might be.
+I like the vision of a [gift economy](https://en.wikipedia.org/wiki/Gift_economy), despite how implausible its existence might be.
 I want to commission artists and participate in that process.
 But I don't want to force myself to come up with an idea that is likely to be subpar and uninspired.
 I already enjoy the work artists do outside of their regular commissions, so why not just pay for one of those.
+
+</div>
