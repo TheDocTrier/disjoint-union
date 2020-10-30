@@ -166,12 +166,10 @@ p {
   margin-bottom: 0.5em; }
 
 hr {
-  border-top: 1px solid var(--hr-color);
-  height: 1px;
-  border: 0; }
-
-ul ol, ol ol, ul ul {
-  margin: 0em 2em; }
+  color: var(--hr-color);
+  background-color: var(--hr-color);
+  border: none;
+  height: 1px; }
 
 /* Header */
 header {
