@@ -34,7 +34,8 @@ Be warned, there may be mature materials behind any of the links given.
 
 | Platform         | Link                          |
 | ---------------- | ----------------------------- |
-| Artstation       | [Portfolio][artstation]       |
+| Artstation       | [TheDocTrier][artstation]     |
+| DeviantArt       | [TheDocTrier][deviantart]     |
 | Discord          | [TheDocTrier#4824][discord]   |
 | e621             | [TheDocTrier][e621]           |
 | Fur Affinity     | [TheDocTrier][fur-affinity]   |
@@ -53,6 +54,7 @@ Be warned, there may be mature materials behind any of the links given.
 
 [artstation]: https://www.artstation.com/thedoctrier
 [discord]: https://discord.com
+[deviantart]: https://www.deviantart.com/thedoctrier
 [e621]: https://e621.net/users/678526
 [fur-affinity]: https://www.furaffinity.net/user/thedoctrier/
 [github]: https://github.com/TheDocTrier
