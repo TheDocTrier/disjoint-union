@@ -1,3 +1,9 @@
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 .content p,
 .post-summary {
   text-indent: 1em;

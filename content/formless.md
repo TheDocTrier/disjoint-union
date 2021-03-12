@@ -37,8 +37,8 @@ Then the donor should ask, with a link to this document, if you would be willing
 ## License of this Text
 
 These are just the thoughts of an ordinary human.
-If you think I missed something important, or that something could use a bit of rewording, then please [contact me](https://disjointunion.link/obout-me/).
-The text of this [*Formless Commissions*](https://disjointunion.link/formless/) document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+If you think I missed something important, or that something could use a bit of rewording, then please [contact me](about-me.md).
+The text of this [*Formless Commissions*](formless.md) document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 Feel free to use its terms in other documents if you want.
 However to avoid confusion, please do not name any derivatives of this document "Formless Commissions".
 
