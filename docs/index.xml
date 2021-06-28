@@ -12,6 +12,30 @@
     
     
     <item>
+      <title>FAQ</title>
+      <link>https://disjointunion.link/faq/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://disjointunion.link/faq/</guid>
+      <description>&lt;aside&gt;
+  &lt;h1&gt;Table of Contents&lt;/h1&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#what-is-this-page&#34;&gt;What is this page?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#sd&#34;&gt;sd&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;h1 id=&#34;what-is-this-page&#34;&gt;What is this page?&lt;/h1&gt;
+&lt;p&gt;This is my &lt;strong&gt;personal frequently asked questions&lt;/strong&gt;.&lt;/p&gt;
+&lt;!-- add link to post about personal faqs --&gt;
+&lt;p&gt;It&amp;rsquo;s intended to be continually updated to handle the questions I&amp;rsquo;m asked most often.
+The questions are not limited to any particular scope.&lt;/p&gt;
+&lt;h1 id=&#34;sd&#34;&gt;sd&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Formless Commissions</title>
       <link>https://disjointunion.link/formless/</link>
       <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
@@ -41,8 +65,8 @@ Notably:&lt;/p&gt;
 Then the donor should ask, with a link to this document, if you would be willing to take on a formless commission.&lt;/p&gt;
 &lt;h2 id=&#34;license-of-this-text&#34;&gt;License of this Text&lt;/h2&gt;
 &lt;p&gt;These are just the thoughts of an ordinary human.
-If you think I missed something important, or that something could use a bit of rewording, then please &lt;a href=&#34;about-me.md&#34;&gt;contact me&lt;/a&gt;.
-The text of this &lt;a href=&#34;formless.md&#34;&gt;&lt;em&gt;Formless Commissions&lt;/em&gt;&lt;/a&gt; document is licensed under &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;CC BY-SA 4.0&lt;/a&gt;.
+If you think I missed something important, or that something could use a bit of rewording, then please &lt;a href=&#34;https://disjointunion.link/about-me.md&#34;&gt;contact me&lt;/a&gt;.
+The text of this &lt;a href=&#34;https://disjointunion.link/formless.md&#34;&gt;&lt;em&gt;Formless Commissions&lt;/em&gt;&lt;/a&gt; document is licensed under &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;CC BY-SA 4.0&lt;/a&gt;.
 Feel free to use its terms in other documents if you want.
 However to avoid confusion, please do not name any derivatives of this document &amp;ldquo;Formless Commissions&amp;rdquo;.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
@@ -199,7 +223,7 @@ It is your responsibility to read and agree to all changes when they are made be
       <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://disjointunion.link/start-here/</guid>
-      <description>&lt;p&gt;This the page for people who are new to &lt;em&gt;Disjoint Union&lt;/em&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This is the page for people who are new to &lt;em&gt;Disjoint Union&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;See the top menu bar for other useful pages.&lt;/p&gt;
 &lt;h1 id=&#34;index&#34;&gt;Index&lt;/h1&gt;
 &lt;ul&gt;
