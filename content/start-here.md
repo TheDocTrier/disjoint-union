@@ -5,7 +5,7 @@ lastmod: 2020-08-19
 draft: false
 ---
 
-This the page for people who are new to *Disjoint Union*.
+This is the page for people who are new to *Disjoint Union*.
 
 See the top menu bar for other useful pages.
 
