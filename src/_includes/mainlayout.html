@@ -1,0 +1,45 @@
+---
+title: Untitled
+postfix: " - Disjoint Union"
+links:
+  - [About Me, /]
+  - [FAQ, /faq/]
+  - [Currently, /currently/]
+  - [Blog, /blog/]
+  - [Fiction, /fiction/]
+  - [Legal, /legal/]
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.svg" />
+    <link rel="icon" href="/static/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>{{ title }}{{ postfix }}</title>
+  </head>
+  <body class="max-w-screen-md container mx-auto">
+    <header class="m-2">
+      <a class="mb-2 inline-block text-xl font-bold nav-button" href="/">
+        DisjointUnion.Link
+      </a>
+      <nav
+        class="
+          flex flex-wrap
+          justify-center
+          border-t-8 border-b-8 border-black
+          p-1
+        "
+      >
+        {% for name, path in links %}
+        <a class="m-1 text-lg nav-button" href="{{path}}"> {{ name }} </a>
+        {% endfor %}
+      </nav>
+    </header>
+    <main class="m-4 p-4 md:paper max-w-prose mx-auto prose">
+      {{ content | safe }}
+    </main>
+  </body>
+</html>

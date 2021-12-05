@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@responsive {
+  .paper {
+    @apply border-2 border-black;
+    box-shadow: 4px 4px black;
+  }
+}
+
+.nav-button {
+  @apply px-2 border-b-2 border-black hover:bg-black hover:text-white;
+}
