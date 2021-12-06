@@ -1,6 +1,6 @@
 ---
 layout: mainlayout
-title: Fiction
+title: Art
 ---
 
-# My Fiction
+# My Art

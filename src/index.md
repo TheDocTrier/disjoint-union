@@ -19,7 +19,7 @@ Less officially: I am a programmer :computer:, a [secular humanist](https://en.w
 
 Here is some common information that you'll probably see in multiple places on the Internet:
 
-* The website you are currently on, <a class="u-url" rel="me" href="https://www.disjointunion.link/">Disjoint Union</a>, is my personal (and official) creative depository.
+* The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://www.disjointunion.link/">Disjoint Union</a>, is my personal (and official) creative depository.
 * I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/Pacific_Time_Zone">Pacific Time Zone</a>.
 * My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code> (post 2020, pronounced <span class="whitespace-pre">try-er</span>), however you may also see my decommissioned handle `Tankobot` (pre 2020).
 * My <a class="u-photo" href="/static/pfp.png">current profile picture</a> is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
@@ -30,7 +30,7 @@ Here is some common information that you'll probably see in multiple places on t
 
 I am a passionate supporter of the [American Civil Liberties Union (ACLU)](https://www.aclu.org), the [Electronic Frontier Foundation (EFF)](https://www.eff.org), and the [Free Software Foundation (FSF)](https://www.fsf.org).
 
-# Links
+## Links
 
 Here are a bunch of links to my primary accounts across many services (ordered alphabetically).
 Note that I barely access most of these accounts.
