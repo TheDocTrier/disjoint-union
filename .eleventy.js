@@ -10,7 +10,14 @@ module.exports = function (eleventyConfig) {
   let md = require("markdown-it");
   let mdLib = md({ html: true })
     .use(require("markdown-it-anchor"))
-    .use(require("markdown-it-emoji"), { shortcuts: {} });
+    .use(require("markdown-it-emoji"), { shortcuts: {} })
+    .use(require("markdown-it-link-attributes"), {
+      pattern: /^https?:\/\//,
+      attrs: {
+        class: "external-link",
+        target: "_blank",
+      },
+    });
   eleventyConfig.setLibrary("md", mdLib);
 
   return {

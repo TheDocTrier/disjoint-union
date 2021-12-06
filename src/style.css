@@ -12,3 +12,7 @@
 .nav-button {
   @apply px-2 border-b-2 border-black hover:bg-black hover:text-white;
 }
+
+.external-link::after {
+  content: "⬀";
+}
