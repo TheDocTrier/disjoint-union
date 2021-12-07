@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
 
   eleventyConfig.addShortcode(
     "relme",
@@ -10,14 +11,7 @@ module.exports = function (eleventyConfig) {
   let md = require("markdown-it");
   let mdLib = md({ html: true })
     .use(require("markdown-it-anchor"))
-    .use(require("markdown-it-emoji"), { shortcuts: {} })
-    .use(require("markdown-it-link-attributes"), {
-      pattern: /^https?:\/\//,
-      attrs: {
-        class: "external-link",
-        target: "_blank",
-      },
-    });
+    .use(require("markdown-it-emoji"), { shortcuts: {} });
   eleventyConfig.setLibrary("md", mdLib);
 
   return {
