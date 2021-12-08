@@ -16,16 +16,20 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@tailwindcss/typography": "^0.4.1",
+    "@types/jsdom": "^16.2.13",
+    "@types/node": "^16.11.12",
     "autoprefixer": "^10.4.0",
     "cssnano": "^5.0.11",
     "del-cli": "^4.0.1",
     "http-server": "^14.0.0",
+    "jsdom": "^19.0.0",
     "markdown-it": "^12.2.0",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-emoji": "^2.0.0",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.5.2"
   },
   "dependencies": {}
 }

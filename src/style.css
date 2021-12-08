@@ -14,8 +14,8 @@
 }
 
 /* Formatting External Links */
-a[href^="//"]::after,
-a[href*="://"]::after
-{
-  content: "⬀";
+/*a[href^="//"]::after,
+a[href*="://"]::after*/
+.external-link::after {
+  content: "↗";
 }
