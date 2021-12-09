@@ -14,7 +14,13 @@ const config = function (eleventyConfig: any) {
   let md = require("markdown-it");
   let mdLib = md({ html: true })
     .use(require("markdown-it-anchor"))
-    .use(require("markdown-it-emoji"), { shortcuts: {} });
+    .use(require("markdown-it-emoji"), {
+      defs: {
+        ...require("markdown-it-emoji/lib/data/full.json"),
+        disjoint_union: "⊔",
+      },
+      shortcuts: {},
+    });
   eleventyConfig.setLibrary("md", mdLib);
 
   // code adapted from sardinev's external-links plugin (MIT license)
