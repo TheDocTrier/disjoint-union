@@ -1,3 +1,5 @@
+import twemoji = require("twemoji");
+
 import { JSDOM } from "jsdom";
 
 const config = function (eleventyConfig: any) {
@@ -11,8 +13,8 @@ const config = function (eleventyConfig: any) {
   );
 
   // markdown
-  let md = require("markdown-it");
-  let mdLib = md({ html: true })
+  let mdLib = require("markdown-it");
+  let md = mdLib({ html: true })
     .use(require("markdown-it-anchor"))
     .use(require("markdown-it-emoji"), {
       defs: {
@@ -21,7 +23,11 @@ const config = function (eleventyConfig: any) {
       },
       shortcuts: {},
     });
-  eleventyConfig.setLibrary("md", mdLib);
+  md.renderer.rules.emoji = function (token, idx) {
+    return twemoji.parse(token[idx].content, { folder: "svg", ext: ".svg" });
+  };
+
+  eleventyConfig.setLibrary("md", md);
 
   // code adapted from sardinev's external-links plugin (MIT license)
   eleventyConfig.addTransform(
