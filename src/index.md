@@ -50,6 +50,7 @@ Be warned, there may be mature materials behind any of the links given.
 | Fur Affinity       | [TheDocTrier][fur-affinity]                                  |
 | GitHub             | {% relme "TheDocTrier", "https://github.com/TheDocTrier" %}  |
 | Goodreads          | [Michael Bradley][goodreads]                                 |
+| Internet Archive   | [Tankobot][internet-archive]                                 |
 | Itch               | [TheDocTrier][itch]                                          |
 | Picarto            | [TheDocTrier][picarto]                                       |
 | Reddit             | [TheDocTrier][reddit]                                        |
@@ -69,6 +70,7 @@ Be warned, there may be mature materials behind any of the links given.
 [fur-affinity]: https://www.furaffinity.net/user/thedoctrier/
 [github]: https://github.com/TheDocTrier
 [goodreads]: https://www.goodreads.com/user/show/117546295-michael-bradley
+[internet-archive]: https://archive.org/details/@tankobot
 [itch]: https://thedoctrier.itch.io/
 [picarto]: https://picarto.tv/TheDocTrier
 [reddit]: https://www.reddit.com/user/TheDocTrier
