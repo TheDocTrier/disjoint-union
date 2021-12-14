@@ -16,6 +16,6 @@
 /* Formatting External Links */
 /*a[href^="//"]::after,
 a[href*="://"]::after*/
-.external-link::after {
-  content: "↗";
+a.external-link {
+  font-style: italic;
 }
