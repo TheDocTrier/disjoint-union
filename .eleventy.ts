@@ -1,5 +1,3 @@
-import twemoji = require("twemoji");
-
 import { JSDOM } from "jsdom";
 
 const config = function (eleventyConfig: any) {
