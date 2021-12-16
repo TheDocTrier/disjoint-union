@@ -23,9 +23,6 @@ const config = function (eleventyConfig: any) {
       },
       shortcuts: {},
     });
-  md.renderer.rules.emoji = function (token, idx) {
-    return twemoji.parse(token[idx].content, { folder: "svg", ext: ".svg" });
-  };
 
   eleventyConfig.setLibrary("md", md);
 
