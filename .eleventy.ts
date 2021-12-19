@@ -4,6 +4,14 @@ const config = function (eleventyConfig: any) {
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPassthroughCopy("src/_redirects");
 
+  eleventyConfig.addCollection("allByUrl", function (collectionApi) {
+    return collectionApi.getAll().sort(function (a, b) {
+      if (a.url < b.url) return -1;
+      if (a.url > b.url) return +1;
+      return 0;
+    });
+  });
+
   eleventyConfig.addShortcode(
     "relme",
     (name: string, href: string) =>
