@@ -1,6 +1,6 @@
 ---
 layout: mainlayout
-title: Reading Guide
+title: Blog
 ---
 
-# Reading Guide
+# Blog
