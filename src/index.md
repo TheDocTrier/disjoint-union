@@ -9,7 +9,7 @@ Please read my [PRIVACY POLICY](/legal/) before continuing to use this site.
 You can view the complete history of every page on this website in the [git repository](https://github.com/TheDocTrier/disjoint-union).
 If you see a mistake, [file an issue](https://github.com/TheDocTrier/disjoint-union/issues) or [submit a pull request](https://github.com/TheDocTrier/disjoint-union/pulls).
 
-<div class="h-card pt-8 border-t-8 border-black">
+<div class="h-card pt-8">
 
 # Who is <span class="p-name italic whitespace-pre">Michael Bradley</span>
 
