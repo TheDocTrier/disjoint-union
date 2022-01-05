@@ -29,6 +29,8 @@ const config = function (eleventyConfig: any) {
       },
       shortcuts: {},
     });
+  md.renderer.rules.emoji = (token, idx) =>
+    `<span class="emoji" title="${token[idx].markup}">${token[idx].content}</span>`;
 
   eleventyConfig.setLibrary("md", md);
 
