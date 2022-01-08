@@ -1,5 +1,5 @@
 ---
-layout: mainlayout
+layout: main-layout
 title: Legal
 ---
 
