@@ -1,6 +1,8 @@
 ---
-layout: main-layout
+layout: pagination-layout
 title: Art
+pagination:
+  data: collections.art
 ---
 
-# My Art
+A guide to my art.
