@@ -1,0 +1,61 @@
+---
+layout: main-layout
+pagination:
+  reverse: true
+  size: 25
+  alias: posts
+---
+
+<section class="h-feed">
+  <h1 class="p-name">{{ title }}</h1>
+
+  {% if not loop.index0 %} {{ content | safe }} {% endif %}
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in posts %}
+      <tr class="h-entry">
+        <td>
+          <a class="p-name u-url" href="{{ post.url }}">
+            {{ post.data.title }}
+          </a>
+        </td>
+        <td class="dt-published">{{ post.date | fmtDate }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <nav class="flex flex-wrap justify-center p-1">
+    <!-- Link to Previous Page -->
+    {% if pagination.href.previous %}
+    <a
+      class="m-1 basic-button"
+      href="{{ pagination.href.previous }}"
+      rel="prev"
+    >
+      Previous
+    </a>
+    {% endif %}
+
+    <!-- Links to Pages -->
+    {% if pagination.pages.length > 1 %} {% for _ in pagination.pages %}
+    <a class="m-1 basic-button" href="{{ pagination.hrefs[ loop.index0 ] }}">
+      {{ loop.index }}
+    </a>
+    {% endfor %} {% endif %}
+
+    <!-- Link to Next Page -->
+    {% if pagination.href.next %}
+    <a class="m-1 basic-button" href="{{ pagination.href.next }}" rel="next">
+      Next
+    </a>
+    {% endif %}
+  </nav>
+</section>

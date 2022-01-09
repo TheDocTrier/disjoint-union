@@ -1,9 +1,11 @@
 import { JSDOM } from "jsdom";
+import { DateTime } from "luxon";
 
 const config = function (eleventyConfig: any) {
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPassthroughCopy("src/_redirects");
 
+  // collection for sitemap
   eleventyConfig.addCollection("allByUrl", function (collectionApi) {
     return collectionApi.getAll().sort(function (a, b) {
       if (a.url < b.url) return -1;
@@ -12,10 +14,30 @@ const config = function (eleventyConfig: any) {
     });
   });
 
+  // rel=me helper
   eleventyConfig.addShortcode(
     "relme",
     (name: string, href: string) =>
       `<a rel="me" href="${encodeURI(href)}">${name}</a>`
+  );
+
+  // typical date formatting
+  const fmtDate = (date: Date, fmt = "yyyy/MM/dd, t (ZZZZ)") =>
+    DateTime.fromJSDate(date).toFormat(fmt);
+  eleventyConfig.addFilter("fmtDate", fmtDate);
+  eleventyConfig.addShortcode("fmtDate", fmtDate);
+
+  // licenses
+  const licenses: { [code: string]: { name: string; href: string } } = {
+    "by-sa": {
+      name: "CC-BY-SA 4.0",
+      href: "https://creativecommons.org/licenses/by-sa/4.0/",
+    },
+  };
+  eleventyConfig.addFilter(
+    "linkLicense",
+    (code) =>
+      `<a class="p-license" href="${licenses[code].href}">${licenses[code].name}</a>`
   );
 
   // markdown

@@ -13,8 +13,16 @@ html {
   }
 }
 
+.invert-button {
+  @apply px-2 border-black hover:bg-black hover:text-white;
+}
+
+.basic-button {
+  @apply invert-button border-2;
+}
+
 .nav-button {
-  @apply px-2 border-b-4 border-black hover:bg-black hover:text-white;
+  @apply invert-button border-b-4;
 }
 
 /* Formatting External Links */
