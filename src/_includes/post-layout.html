@@ -1,0 +1,44 @@
+---
+layout: main-layout
+# updated, license
+---
+
+<article class="h-entry">
+  <h1 class="p-name">{{ title }}</h1>
+
+  <!-- Post Content -->
+  <section class="e-content">{{ content | safe }}</section>
+
+    <small>
+      <!-- Author -->
+      <span class="p-author h-card">
+        Written by
+        <a class="p-name u-url" href="/">Michael Bradley</a>
+        (see <a href="https://github.com/TheDocTrier/disjoint-union/blame/eleventy{{ page.inputPath.slice(1) }}">blame</a>)
+      </span>
+      <br />
+
+      <!-- Publish Date -->
+      Published:
+      <time class="dt-published" datetime="{{ date.toISOString() }}">
+        {{ date | fmtDate }}
+      </time>
+      <br />
+
+      {% if updated %}
+      <!-- Update Date -->
+      Updated:
+      <time class="dt-updated" datetime="{{ updated.toISOString() }}">
+        {{ updated | fmtDate }}
+      </time>
+      <br />
+      {% endif %}
+      
+      {% if license %}
+      <!-- Copyright -->
+      This post is licensed under
+      {{ license | linkLicense | safe }}
+      {% endif %}
+    </small>
+  </footer>
+</article>
