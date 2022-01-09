@@ -15,7 +15,7 @@ If you see a mistake, [file an issue](https://github.com/TheDocTrier/disjoint-un
 
 I am many things (see the [links below](#links)).
 More officially: I am a <a class="p-role" href="https://en.wikipedia.org/wiki/Mathematics">mathematician</a> :mage:.
-Less officially: I am a programmer :computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism) :people_hugging:, an [essayist](/blog) :pen:, a [furry](https://en.wikifur.com/wiki/Furry) :raccoon:, and possibly a [creative](/art) :black_nib: :art: (if I can find the motivation).
+Less officially: I am a programmer :computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism) :people_hugging:, an [essayist](/essays/) :pen:, a [furry](https://en.wikifur.com/wiki/Furry) :raccoon:, and possibly a [creative](/art/) :black_nib: :art: (if I can find the motivation).
 
 Here is some common information that you'll probably see in multiple places on the Internet:
 

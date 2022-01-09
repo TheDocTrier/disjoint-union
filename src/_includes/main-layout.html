@@ -5,7 +5,7 @@ links:
   - [About Me, /]
   - [FAQ, /faq/]
   - [Currently, /currently/]
-  - [Blog, /blog/]
+  - [Essays, /essays/]
   - [Art, /art/]
   - [Legal, /legal/]
   - [Sitemap, /sitemap/]
@@ -33,12 +33,7 @@ links:
         DisjointUnion.Link
       </a>
       <nav
-        class="
-          flex flex-wrap
-          justify-center
-          border-t-8 border-b-8 border-black
-          p-1
-        "
+        class="flex flex-wrap justify-center border-t-8 border-b-8 border-black p-1"
       >
         {% for name, path in links %}
         <a class="m-1 text-lg nav-button" href="{{path}}"> {{ name }} </a>
