@@ -20,10 +20,10 @@ Less officially: I am a programmer :computer:, a [secular humanist](https://en.w
 Here is some common information that you'll probably see in multiple places on the Internet:
 
 * The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://www.disjointunion.link/">Disjoint Union</a> :disjoint_union:, is my personal (and official) creative depository.
-* I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/Pacific_Time_Zone">Pacific Time Zone</a> :hourglass:.
+* I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/Pacific_Time_Zone">Pacific Time Zone</a> :clock7:.
 * My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code> :label: (post 2020, pronounced <span class="whitespace-pre">try-er</span>), however you may also see my decommissioned handle `Tankobot` (pre 2020).
 * My <a class="u-photo" href="/static/pfp.png">current profile picture</a> :framed_picture: is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
-  * I chose it because while clearly not the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle), it still bears a peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).
+  * I chose it because, while clearly not the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle), it still bears a peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).
   * Indeed, Pascal's mod 6 is the intersection of [Pascal's mod 2](/static/pascal/mod2.png) (the Sierpiński) and [Pascal's mod 3](/static/pascal/mod3.png).
 
 ## Advocacy
