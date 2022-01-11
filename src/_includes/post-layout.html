@@ -1,44 +1,65 @@
 ---
 layout: main-layout
-# updated, license
+# when, toc, updated, license, prev, next
 ---
 
 <article class="h-entry">
   <h1 class="p-name">{{ title }}</h1>
 
-  <!-- Post Content -->
-  <section class="e-content">{{ content | safe }}</section>
+  <section class="e-content">
+    <!-- When -->
+    {% if when %} This post describes events following
+    <time class="dt-when" datetime="{{ when.toISOString() }}"
+      >{{ when | fmtDate }}</time
+    >. {% endif %}
 
-    <small>
-      <!-- Author -->
-      <span class="p-author h-card">
-        Written by
-        <a class="p-name u-url" href="/">Michael Bradley</a>
-        (see <a href="https://github.com/TheDocTrier/disjoint-union/blame/eleventy{{ page.inputPath.slice(1) }}">blame</a>)
-      </span>
-      <br />
+    <!-- Table of Contents -->
+    {% if toc %}
+    <details class="m-4 border-black border">
+      <summary class="basic-button">Table of Contents</summary>
+      {{ content | toc | safe }}
+    </details>
+    {% endif %}
 
-      <!-- Publish Date -->
-      Published:
-      <time class="dt-published" datetime="{{ date.toISOString() }}">
-        {{ date | fmtDate }}
-      </time>
-      <br />
+    <!-- Content -->
+    {{ content | safe }}
+  </section>
 
-      {% if updated %}
-      <!-- Update Date -->
-      Updated:
-      <time class="dt-updated" datetime="{{ updated.toISOString() }}">
-        {{ updated | fmtDate }}
-      </time>
-      <br />
-      {% endif %}
-      
-      {% if license %}
-      <!-- Copyright -->
-      This post is licensed under
-      {{ license | linkLicense | safe }}
-      {% endif %}
-    </small>
-  </footer>
+  <small>
+    <!-- Author -->
+    <span class="p-author h-card">
+      Written by
+      <a class="p-name u-url" href="/">Michael Bradley</a>
+      (see
+      <a
+        href="https://github.com/TheDocTrier/disjoint-union/blame/eleventy{{ page.inputPath.slice(1) }}"
+      >
+        blame </a
+      >)
+    </span>
+    <br />
+
+    <!-- Created Date -->
+    Created:
+    <time class="dt-published" datetime="{{ date.toISOString() }}">
+      {{ date | fmtDate }}
+    </time>
+    <br />
+
+    <!-- Updated Date -->
+    {% if updated %} Updated:
+    <time class="dt-updated" datetime="{{ updated.toISOString() }}">
+      {{ updated | fmtDate }}
+    </time>
+    <br />
+    {% endif %}
+
+    <!-- Copyright -->
+    {% if license %} This post is licensed under {{ license | linkLicense | safe
+    }}. {% endif %}
+  </small>
+
+  {% from "page-nav.html" import pageNav %}
+  <!-- Render Page Nav -->
+  {{ pageNav(prev, next) }}
 </article>

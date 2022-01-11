@@ -32,30 +32,8 @@ pagination:
     </tbody>
   </table>
 
-  <nav class="flex flex-wrap justify-center p-1">
-    <!-- Link to Previous Page -->
-    {% if pagination.href.previous %}
-    <a
-      class="m-1 basic-button"
-      href="{{ pagination.href.previous }}"
-      rel="prev"
-    >
-      Previous
-    </a>
-    {% endif %}
-
-    <!-- Links to Pages -->
-    {% if pagination.pages.length > 1 %} {% for _ in pagination.pages %}
-    <a class="m-1 basic-button" href="{{ pagination.hrefs[ loop.index0 ] }}">
-      {{ loop.index }}
-    </a>
-    {% endfor %} {% endif %}
-
-    <!-- Link to Next Page -->
-    {% if pagination.href.next %}
-    <a class="m-1 basic-button" href="{{ pagination.href.next }}" rel="next">
-      Next
-    </a>
-    {% endif %}
-  </nav>
+  {% from "page-nav.html" import pageNav %}
+  <!-- Render Page Nav -->
+  {{ pageNav(pagination.href.previous, pagination.href.next, pagination.hrefs)
+  }}
 </section>

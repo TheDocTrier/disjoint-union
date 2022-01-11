@@ -21,6 +21,9 @@ const config = function (eleventyConfig: any) {
       `<a rel="me" href="${encodeURI(href)}">${name}</a>`
   );
 
+  // Table of Contents
+  eleventyConfig.addPlugin(require("eleventy-plugin-toc"), { ul: true });
+
   // typical date formatting
   const fmtDate = (date: Date, fmt = "yyyy/MM/dd, t (ZZZZ)") =>
     DateTime.fromJSDate(date).toFormat(fmt);
@@ -37,13 +40,15 @@ const config = function (eleventyConfig: any) {
   eleventyConfig.addFilter(
     "linkLicense",
     (code) =>
-      `<a class="p-license" href="${licenses[code].href}">${licenses[code].name}</a>`
+      `<a class="u-license" href="${licenses[code].href}">${licenses[code].name}</a>`
   );
 
   // markdown
   let mdLib = require("markdown-it");
   let md = mdLib({ html: true })
-    .use(require("markdown-it-anchor"))
+    .use(require("markdown-it-anchor"), {
+      slugify: eleventyConfig.getFilter("slugify"),
+    })
     .use(require("markdown-it-emoji"), {
       defs: {
         ...require("markdown-it-emoji/lib/data/full.json"),

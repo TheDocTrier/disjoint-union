@@ -22,7 +22,7 @@ html {
 }
 
 .nav-button {
-  @apply invert-button border-b-4;
+  @apply invert-button border-b-4 border-r-4;
 }
 
 /* Formatting External Links */
@@ -30,4 +30,8 @@ html {
 a[href*="://"]::after*/
 a.external-link {
   font-style: italic;
+}
+
+.toc ul {
+  margin: 0;
 }

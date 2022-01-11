@@ -7,6 +7,7 @@ links:
   - [Currently, /currently/]
   - [Essays, /essays/]
   - [Art, /art/]
+  - [Life, /life/]
   - [Legal, /legal/]
   - [Sitemap, /sitemap/]
 ---
@@ -40,8 +41,6 @@ links:
         {% endfor %}
       </nav>
     </header>
-    <main class="m-4 p-4 md:paper max-w-prose mx-auto prose">
-      {{ content | safe }}
-    </main>
+    <main class="m-4 p-4 md:paper mx-auto prose">{{ content | safe }}</main>
   </body>
 </html>

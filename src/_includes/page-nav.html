@@ -1,0 +1,20 @@
+{% macro pageNav(prev, next, hrefs=[], pagination={}) %}
+<nav class="flex flex-wrap justify-center p-1">
+  <!-- Link to Previous Page -->
+  {% if prev %}
+  <a class="m-1 basic-button" href="{{ prev }}" rel="prev"> Previous </a>
+  {% endif %}
+
+  <!-- Links to Pages -->
+  {% if hrefs.length > 1 %} {% for _ in hrefs %}
+  <a class="m-1 basic-button" href="{{ hrefs[ loop.index0 ] }}">
+    {{ loop.index }}
+  </a>
+  {% endfor %} {% endif %}
+
+  <!-- Link to Next Page -->
+  {% if pagination.href.next %}
+  <a class="m-1 basic-button" href="{{ next }}" rel="next"> Next </a>
+  {% endif %}
+</nav>
+{% endmacro %}
