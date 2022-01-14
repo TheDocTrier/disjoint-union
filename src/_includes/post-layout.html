@@ -1,23 +1,39 @@
 ---
 layout: main-layout
-# when, toc, updated, license, prev, next
+# toc, when, date, updated, license
+# image ( src, height, width )
+# series
 ---
+
+{% from "page-nav.html" import pageNav %}
 
 <article class="h-entry">
   <h1 class="p-name">{{ title }}</h1>
 
   <section class="e-content">
     <!-- When -->
-    {% if when %} This post describes events following
+    {% if when %} This post focuses on events following
     <time class="dt-when" datetime="{{ when.toISOString() }}"
       >{{ when | fmtDate }}</time
     >. {% endif %}
 
+    <!-- Image -->
+    {% if image %} {% set imgBlock %}
+    <img
+      class="u-photo w-full border-black border-2"
+      src="{{ image.src }}"
+      height="{{ image.height }}"
+      width="{{ image.width }}"
+    />
+    {% endset %} {% if next %}
+    <a href="{{ next }}">{{ imgBlock | safe }}</a>
+    {% else %} {{ imgBlock | safe }} {% endif %} {% endif %}
+
     <!-- Table of Contents -->
     {% if toc %}
-    <details class="m-4 border-black border">
+    <details class="m-4">
       <summary class="basic-button">Table of Contents</summary>
-      {{ content | toc | safe }}
+      <div class="px-2 border-black border">{{ content | toc | safe }}</div>
     </details>
     {% endif %}
 
@@ -25,41 +41,62 @@ layout: main-layout
     {{ content | safe }}
   </section>
 
-  <small>
-    <!-- Author -->
-    <span class="p-author h-card">
-      Written by
-      <a class="p-name u-url" href="/">Michael Bradley</a>
-      (see
-      <a
-        href="https://github.com/TheDocTrier/disjoint-union/blame/eleventy{{ page.inputPath.slice(1) }}"
-      >
-        blame </a
-      >)
-    </span>
-    <br />
+  <hr />
 
-    <!-- Created Date -->
+  <!-- Author -->
+  <div class="p-author h-card">
+    Written by
+    <a class="p-name u-url" href="https://www.disjointunion.link">
+      Michael Bradley
+    </a>
+    (see
+    <a
+      href="https://github.com/TheDocTrier/disjoint-union/blame/eleventy{{ page.inputPath.slice(1) }}"
+      >blame</a
+    >)
+  </div>
+
+  <!-- Call To Action -->
+  <b>
+    If you appreciate this content AND are able,
+    <a rel="payment" class="basic-button inline-block" href="/pay/"
+      >pay for it</a
+    >.
+  </b>
+
+  <!-- Created Date -->
+  <div>
     Created:
     <time class="dt-published" datetime="{{ date.toISOString() }}">
       {{ date | fmtDate }}
     </time>
-    <br />
+  </div>
 
-    <!-- Updated Date -->
-    {% if updated %} Updated:
+  <!-- Updated Date -->
+  {% if updated %}
+  <div>
+    Updated:
     <time class="dt-updated" datetime="{{ updated.toISOString() }}">
       {{ updated | fmtDate }}
     </time>
-    <br />
-    {% endif %}
+  </div>
+  {% endif %}
 
-    <!-- Copyright -->
-    {% if license %} This post is licensed under {{ license | linkLicense | safe
-    }}. {% endif %}
-  </small>
+  <!-- Copyright -->
+  {% if license %}
+  <div>This post is licensed under {{ license | linkLicense | safe }}.</div>
+  {% endif %}
 
-  {% from "page-nav.html" import pageNav %}
+  <!-- Series of Posts -->
+  {% if series %}
+  <!-- Get Neighbors -->
+  {% set pages = collections[series] | reverse %}
+  <!---->
+  {% set prev = pages | getPreviousCollectionItem(page) %}
+  <!---->
+  {% set next = pages | getNextCollectionItem(page) %}
+  <!---->
+  {% set hrefs = pages | map("url") %}
   <!-- Render Page Nav -->
-  {{ pageNav(prev, next) }}
+  {{ pageNav(page.url, prev.url, next.url, hrefs) }} {% endif %}
 </article>

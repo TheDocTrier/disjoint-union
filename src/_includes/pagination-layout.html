@@ -34,6 +34,6 @@ pagination:
 
   {% from "page-nav.html" import pageNav %}
   <!-- Render Page Nav -->
-  {{ pageNav(pagination.href.previous, pagination.href.next, pagination.hrefs)
-  }}
+  {{ pageNav(page.url, pagination.href.previous, pagination.href.next,
+  pagination.hrefs) }}
 </section>
