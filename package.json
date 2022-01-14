@@ -6,7 +6,7 @@
   "author": "Michael Bradley <thedoctrier@gmail.com>",
   "private": true,
   "scripts": {
-    "clean": "yarn del _site/**",
+    "clean": "yarn del '_site/**'",
     "build": "yarn clean && yarn tsc && yarn css && yarn eleventy",
     "serve": "yarn build --serve --port=1313",
     "css": "yarn postcss src/style.css -o _site/style.css",
