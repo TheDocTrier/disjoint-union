@@ -14,21 +14,49 @@ const config = function (eleventyConfig: any) {
     });
   });
 
+  // select list of attributes from a list of objects
+  eleventyConfig.addFilter("map", (l: unknown[], attr: string) =>
+    l.map((x) => x[attr])
+  );
+
   // rel=me helper
   eleventyConfig.addShortcode(
-    "relme",
-    (name: string, href: string) =>
-      `<a rel="me" href="${encodeURI(href)}">${name}</a>`
+    "rel",
+    (rel: string, name: string, href: string) =>
+      `<a rel="${rel}" href="${href}">${name}</a>`
   );
+
+  // my account helper
+  eleventyConfig.addGlobalData("my", {
+    ao3: "https://archiveofourown.org/users/TheDocTrier",
+    artstation: "https://www.artstation.com/thedoctrier",
+    discord: "https://discord.com",
+    deviantart: "https://www.deviantart.com/thedoctrier",
+    e621: "https://e621.net/users/678526",
+    furaffinity: "https://www.furaffinity.net/user/thedoctrier/",
+    github: "https://github.com/TheDocTrier",
+    goodreads: "https://www.goodreads.com/user/show/117546295-michael-bradley",
+    internetarchive: "https://archive.org/details/@tankobot",
+    itch: "https://thedoctrier.itch.io/",
+    kofi: "https://ko-fi.com/thedoctrier",
+    patreon: "https://www.patreon.com/thedoctrier",
+    picarto: "https://picarto.tv/TheDocTrier",
+    reddit: "https://www.reddit.com/user/TheDocTrier",
+    stackexchange: "https://stackexchange.com/users/19080546/thedoctrier",
+    telegram: "https://t.me/TheDocTrier",
+    twitch: "https://www.twitch.tv/doctrier",
+    twitter: "https://twitter.com/TheDocTrier",
+    wikifur: "https://en.wikifur.com/wiki/User:TheDocTrier",
+    wikipedia: "https://en.wikipedia.org/wiki/User:TheDocTrier",
+  });
 
   // Table of Contents
   eleventyConfig.addPlugin(require("eleventy-plugin-toc"), { ul: true });
 
   // typical date formatting
-  const fmtDate = (date: Date, fmt = "yyyy/MM/dd, t (ZZZZ)") =>
-    DateTime.fromJSDate(date).toFormat(fmt);
+  const fmtDate = (date: Date, fmt = "yyyy-MM-dd, t (ZZZZ)") =>
+    DateTime.fromJSDate(date).setZone("America/Los_Angeles").toFormat(fmt);
   eleventyConfig.addFilter("fmtDate", fmtDate);
-  eleventyConfig.addShortcode("fmtDate", fmtDate);
 
   // licenses
   const licenses: { [code: string]: { name: string; href: string } } = {
@@ -76,6 +104,7 @@ const config = function (eleventyConfig: any) {
               if (/^(https?\:)?\/\//i.test(link.href)) {
                 link.classList.add("external-link");
                 link.target = "_blank";
+                link.rel += " noreferrer noopener";
               }
             });
           } else {
