@@ -8,8 +8,7 @@ links:
   - [Essays, /essays/]
   - [Art, /art/]
   - [Life, /life/]
-  - [Legal, /legal/]
-  - [Sitemap, /sitemap/]
+  - [Pay, /pay/]
 ---
 
 <!DOCTYPE html>
@@ -22,7 +21,7 @@ links:
     <link rel="stylesheet" href="/style.css" />
     <title>{{ title }}{{ postfix }}</title>
   </head>
-  <body class="max-w-screen-md container mx-auto">
+  <body class="max-w-screen-md container mx-auto pb-8">
     <header class="m-2">
       <img
         class="mb-2 mx-2 inline h-7 w-7"
@@ -42,5 +41,26 @@ links:
       </nav>
     </header>
     <main class="m-4 p-4 md:paper mx-auto prose">{{ content | safe }}</main>
+    <footer class="m-4 p-4 md:paper mx-auto prose">
+      <p>
+        You can view the complete history of every page on this website in the
+        <a rel="repo" href="https://github.com/TheDocTrier/disjoint-union"
+          >git repository</a
+        >. If you see a mistake,
+        <a href="https://github.com/TheDocTrier/disjoint-union/issues"
+          >file an issue</a
+        >
+        or
+        <a href="https://github.com/TheDocTrier/disjoint-union/pulls"
+          >submit a pull request</a
+        >. Also, I generate a <a href="/sitemap/">sitemap</a> for searching all
+        titles.
+      </p>
+
+      <p>
+        Read my <a href="/legal/">PRIVACY POLICY</a> before continuing to use
+        this website.
+      </p>
+    </footer>
   </body>
 </html>
