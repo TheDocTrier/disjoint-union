@@ -4,10 +4,8 @@ title: Michael Bradley
 postfix: ""
 ---
 
-Please read my [PRIVACY POLICY](/legal/) before continuing to use this site.
-
-You can view the complete history of every page on this website in the [git repository](https://github.com/TheDocTrier/disjoint-union).
-If you see a mistake, [file an issue](https://github.com/TheDocTrier/disjoint-union/issues) or [submit a pull request](https://github.com/TheDocTrier/disjoint-union/pulls).
+Please read my [LEGAL](/legal/) page before continuing to use this site.
+It contains a *privacy policy* and a *content disclaimer*.
 
 <div class="h-card pt-8">
 
@@ -20,7 +18,7 @@ Less officially: I am a programmer :computer:, a [secular humanist](https://en.w
 Here is some common information that you'll probably see in multiple places on the Internet:
 
 * The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://www.disjointunion.link/">Disjoint Union</a> :disjoint_union:, is my personal (and official) creative depository.
-* I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/Pacific_Time_Zone">Pacific Time Zone</a> :clock7:.
+* I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">America/Los_Angeles</a> :clock7: time zone.
 * My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code> :label: (post 2020, pronounced <span class="whitespace-pre">try-er</span>), however you may also see my decommissioned handle `Tankobot` (pre 2020).
 * My <a class="u-photo" href="/static/pfp.png">current profile picture</a> :framed_picture: is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
   * I chose it because, while clearly not the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle), it still bears a peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).
@@ -34,54 +32,37 @@ I am a passionate supporter of the [American Civil Liberties Union (ACLU)](https
 
 Here are a bunch of links to my primary accounts across many services (ordered alphabetically).
 Note that I barely access most of these accounts.
-If you want to contact me, I currently recommend my [**Twitter**](https://twitter.com/TheDocTrier) or my [Telegram][telegram]<sup>[NOT SECURE](https://security.stackexchange.com/a/49802/240649)</sup>, where it's easiest for me to respond quickly.
+If you want to contact me, I currently recommend my [**Twitter**]({{ my.twitter }}) or my [Telegram]({{ my.telegram }})<sup>[NOT SECURE](https://security.stackexchange.com/a/49802/240649)</sup>, where it's easiest for me to respond quickly.
 You can also try sending an email to <code><a class="u-email" rel="me" href="mailto:thedoctrier@gmail.com">thedoctrier@gmail.com</a></code>, but spam may prevent me from seeing it.
 If you want a more secure option, and we're already [mutuals][mutual], then contact me via [Signal][signal].
 The table given here is supposed to act as more of a *reference* for others (and myself).
 Be warned, there may be mature materials behind any of the links given.
 
-| Platform           | Link                                                         |
-| ------------------ | ------------------------------------------------------------ |
-| Archive of Our Own | [TheDocTrier][ao3]                                           |
-| Artstation         | [TheDocTrier][artstation]                                    |
-| DeviantArt         | [TheDocTrier][deviantart]                                    |
-| Discord            | [TheDocTrier#4824][discord]                                  |
-| e621               | [TheDocTrier][e621]                                          |
-| Fur Affinity       | [TheDocTrier][fur-affinity]                                  |
-| GitHub             | {% relme "TheDocTrier", "https://github.com/TheDocTrier" %}  |
-| Goodreads          | [Michael Bradley][goodreads]                                 |
-| Internet Archive   | [Tankobot][internet-archive]                                 |
-| Itch               | [TheDocTrier][itch]                                          |
-| Picarto            | [TheDocTrier][picarto]                                       |
-| Reddit             | [TheDocTrier][reddit]                                        |
-| [Signal][signal]   | Must be mutuals.                                             |
-| Stack Exchange     | [TheDocTrier][stack-exchange]                                |
-| Telegram           | [TheDocTrier][telegram]                                      |
-| Twitch             | [DocTrier][twitch]                                           |
-| Twitter            | {% relme "TheDocTrier", "https://twitter.com/TheDocTrier" %} |
-| WikiFur            | [TheDocTrier][wikifur]                                       |
-| Wikipedia          | [TheDocTrier][wikipedia]                                     |
+| Platform            | Link                                           |
+| ------------------- | ---------------------------------------------- |
+| Archive of Our Own  | [TheDocTrier]({{ my.ao3 }})                    |
+| Artstation          | [TheDocTrier]({{ my.artstation }})             |
+| DeviantArt          | [TheDocTrier]({{ my.deviantart }})             |
+| Discord             | [TheDocTrier#4824]({{ my.discord }})           |
+| e621                | [TheDocTrier]({{ my.e621 }})                   |
+| Fur Affinity        | [TheDocTrier]({{ my.furaffinity }})            |
+| GitHub              | {% rel "me", "TheDocTrier", my.github %}       |
+| Goodreads           | [Michael Bradley]({{ my.goodreads }})          |
+| Internet Archive    | [Tankobot]({{ my.internetarchive }})           |
+| Itch                | [TheDocTrier]({{ my.itch }})                   |
+| Ko-Fi **Payment**   | {% rel "payment", "TheDocTrier", my.kofi %}    |
+| Patreon **Payment** | {% rel "payment", "TheDocTrier", my.patreon %} |
+| Picarto             | [TheDocTrier]({{ my.picarto }})                |
+| Reddit              | [TheDocTrier]({{ my.reddit }})                 |
+| [Signal][signal]    | Must be mutuals.                               |
+| Stack Exchange      | [TheDocTrier]({{ my.stackexchange }})          |
+| Telegram            | [TheDocTrier]({{ my.telegram }})               |
+| Twitch              | [DocTrier]({{ my.twitch }})                    |
+| Twitter             | {% rel "me", "TheDocTrier", my.twitter %}      |
+| WikiFur             | [TheDocTrier]({{ my.wikifur }})                |
+| Wikipedia           | [TheDocTrier]({{ my.wikipedia }})              |
 
-[ao3]: https://archiveofourown.org/users/TheDocTrier
-[artstation]: https://www.artstation.com/thedoctrier
-[discord]: https://discord.com
-[deviantart]: https://www.deviantart.com/thedoctrier
-[e621]: https://e621.net/users/678526
-[fur-affinity]: https://www.furaffinity.net/user/thedoctrier/
-[github]: https://github.com/TheDocTrier
-[goodreads]: https://www.goodreads.com/user/show/117546295-michael-bradley
-[internet-archive]: https://archive.org/details/@tankobot
-[itch]: https://thedoctrier.itch.io/
-[picarto]: https://picarto.tv/TheDocTrier
-[reddit]: https://www.reddit.com/user/TheDocTrier
 [signal]: https://signal.org
-[stack-exchange]: https://stackexchange.com/users/19080546/thedoctrier
-[telegram]: https://t.me/TheDocTrier
-[twitch]: https://www.twitch.tv/doctrier
-[twitter]: https://twitter.com/TheDocTrier
-[wikifur]: https://en.wikifur.com/wiki/User:TheDocTrier
-[wikipedia]: https://en.wikipedia.org/wiki/User:TheDocTrier
-
 [mutual]: https://web.archive.org/web/20200819071744/https://www.urbandictionary.com/define.php?term=Mutual
 
 </div>
