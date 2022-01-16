@@ -2,6 +2,9 @@ import { JSDOM } from "jsdom";
 import { DateTime } from "luxon";
 
 const config = function (eleventyConfig: any) {
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.ignores.add("./node_modules/");
+
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPassthroughCopy("src/_redirects");
 

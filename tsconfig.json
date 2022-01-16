@@ -3,7 +3,8 @@
     //"strict": true,
     "target": "es6",
     "moduleResolution": "node",
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "preserveWatchOutput": true
   },
   "include": [".eleventy.ts"]
 }

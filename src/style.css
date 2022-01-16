@@ -6,7 +6,7 @@ html {
   overflow-y: scroll;
 }
 
-@responsive {
+@layer components {
   .paper {
     @apply border-2 border-black;
     box-shadow: 4px 4px black;
