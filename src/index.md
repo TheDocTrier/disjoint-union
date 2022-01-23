@@ -13,7 +13,7 @@ It contains a *privacy policy* and a *content disclaimer*.
 
 I am many things (see the [links below](#links)).
 More officially: I am a <a class="p-role" href="https://en.wikipedia.org/wiki/Mathematics">mathematician</a> :mage:.
-Less officially: I am a programmer :computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism) :people_hugging:, an [essayist](/essays/) :pen:, a [furry](https://en.wikifur.com/wiki/Furry) :raccoon:, and possibly a [creative](/art/) :black_nib: :art: (if I can find the motivation).
+Less officially: I am a programmer :computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism) :people_hugging:, an [essayist](/essays/) :pen:, a [furry](https://en.wikifur.com/wiki/Furry) :raccoon:, and perhaps an [artist](/art/) :black_nib: :art: too.
 
 Here is some common information that you'll probably see in multiple places on the Internet:
 
@@ -38,29 +38,30 @@ If you want a more secure option, and we're already [mutuals][mutual], then cont
 The table given here is supposed to act as more of a *reference* for others (and myself).
 Be warned, there may be mature materials behind any of the links given.
 
-| Platform            | Link                                           |
-| ------------------- | ---------------------------------------------- |
-| Archive of Our Own  | [TheDocTrier]({{ my.ao3 }})                    |
-| Artstation          | [TheDocTrier]({{ my.artstation }})             |
-| DeviantArt          | [TheDocTrier]({{ my.deviantart }})             |
-| Discord             | [TheDocTrier#4824]({{ my.discord }})           |
-| e621                | [TheDocTrier]({{ my.e621 }})                   |
-| Fur Affinity        | [TheDocTrier]({{ my.furaffinity }})            |
-| GitHub              | {% rel "me", "TheDocTrier", my.github %}       |
-| Goodreads           | [Michael Bradley]({{ my.goodreads }})          |
-| Internet Archive    | [Tankobot]({{ my.internetarchive }})           |
-| Itch                | [TheDocTrier]({{ my.itch }})                   |
-| Ko-Fi **Payment**   | {% rel "payment", "TheDocTrier", my.kofi %}    |
-| Patreon **Payment** | {% rel "payment", "TheDocTrier", my.patreon %} |
-| Picarto             | [TheDocTrier]({{ my.picarto }})                |
-| Reddit              | [TheDocTrier]({{ my.reddit }})                 |
-| [Signal][signal]    | Must be mutuals.                               |
-| Stack Exchange      | [TheDocTrier]({{ my.stackexchange }})          |
-| Telegram            | [TheDocTrier]({{ my.telegram }})               |
-| Twitch              | [DocTrier]({{ my.twitch }})                    |
-| Twitter             | {% rel "me", "TheDocTrier", my.twitter %}      |
-| WikiFur             | [TheDocTrier]({{ my.wikifur }})                |
-| Wikipedia           | [TheDocTrier]({{ my.wikipedia }})              |
+| Platform              | Link                                             |
+| --------------------- | ------------------------------------------------ |
+| Archive of Our Own    | [TheDocTrier]({{ my.ao3 }})                      |
+| Artstation            | [TheDocTrier]({{ my.artstation }})               |
+| DeviantArt            | [TheDocTrier]({{ my.deviantart }})               |
+| Discord               | [TheDocTrier#4824]({{ my.discord }})             |
+| e621                  | [TheDocTrier]({{ my.e621 }})                     |
+| Fur Affinity          | [TheDocTrier]({{ my.furaffinity }})              |
+| GitHub                | {% rel "me", "TheDocTrier", my.github %}         |
+| Goodreads             | [Michael Bradley]({{ my.goodreads }})            |
+| Internet Archive      | [Tankobot]({{ my.internetarchive }})             |
+| Itch                  | [TheDocTrier]({{ my.itch }})                     |
+| Ko-fi **Payment**     | {% rel "payment", "TheDocTrier", my.kofi %}      |
+| Liberapay **Payment** | {% rel "payment", "TheDocTrier", my.liberapay %} |
+| Patreon **Payment**   | {% rel "payment", "TheDocTrier", my.patreon %}   |
+| Picarto               | [TheDocTrier]({{ my.picarto }})                  |
+| Reddit                | [TheDocTrier]({{ my.reddit }})                   |
+| [Signal][signal]      | Must be mutuals.                                 |
+| Stack Exchange        | [TheDocTrier]({{ my.stackexchange }})            |
+| Telegram              | [TheDocTrier]({{ my.telegram }})                 |
+| Twitch                | [DocTrier]({{ my.twitch }})                      |
+| Twitter               | {% rel "me", "TheDocTrier", my.twitter %}        |
+| WikiFur               | [TheDocTrier]({{ my.wikifur }})                  |
+| Wikipedia             | [TheDocTrier]({{ my.wikipedia }})                |
 
 [signal]: https://signal.org
 [mutual]: https://web.archive.org/web/20200819071744/https://www.urbandictionary.com/define.php?term=Mutual

@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "yarn del '_site/**'",
     "dev-ts": "yarn tsc",
-    "dev-css": "yarn postcss src/style.css -o _site/style.css",
+    "dev-css": "yarn postcss src/style.css -o _site/style.css --verbose",
     "dev-11ty": "yarn eleventy",
     "watch-ts": "yarn dev-ts -w",
     "watch-css": "yarn dev-css -w",

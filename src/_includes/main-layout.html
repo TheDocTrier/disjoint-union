@@ -16,32 +16,88 @@ links:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="same-origin" />
+
     <link rel="icon" href="/static/favicon.svg" />
     <link rel="icon" href="/static/favicon.png" />
     <link rel="stylesheet" href="/style.css" />
+
+    {% for feed in collections.feed %}
+    <link rel="feed" href="{{ feed.url }}" title="{{ feed.data.title }}" />
+    {% endfor %}
+
     <title>{{ title }}{{ postfix }}</title>
   </head>
   <body class="max-w-screen-md container mx-auto pb-8">
     <header class="m-2">
-      <img
-        class="mb-2 mx-2 inline h-7 w-7"
-        src="/static/favicon.svg"
-        width="32"
-        height="32"
-      />
-      <a class="mb-2 inline-block text-xl font-bold nav-button" href="/">
-        DisjointUnion.Link
-      </a>
+      <div class="flex flex-wrap justify-between">
+        <span>
+          <img
+            class="mb-2 mx-2 inline h-7 w-7"
+            src="/static/favicon.svg"
+            width="32"
+            height="32"
+          />
+          <a class="mb-2 inline-block text-xl font-bold nav-button" href="/">
+            DisjointUnion.Link
+          </a>
+        </span>
+        <a class="mx-2 mb-2 text-lg nav-button" href="/legal/">Legal</a>
+      </div>
       <nav
         class="flex flex-wrap justify-center border-t-8 border-b-8 border-black p-1"
       >
         {% for name, path in links %}
-        <a class="m-1 text-lg nav-button" href="{{path}}"> {{ name }} </a>
+        <a class="m-1 text-lg nav-button" href="{{ path }}"> {{ name }} </a>
         {% endfor %}
       </nav>
     </header>
-    <main class="m-4 p-4 md:paper mx-auto prose">{{ content | safe }}</main>
-    <footer class="m-4 p-4 md:paper mx-auto prose">
+    <div class="main-paper prose">
+      My content is
+      <b>free to use, distribute, and modify</b> (see
+      <a href="#page-license">license below</a>).
+    </div>
+    <main class="main-paper prose">{{ content | safe }}</main>
+    <footer class="main-paper prose">
+      <p id="page-license">
+        My <em>original content</em> on this page is licensed under
+        <a rel="license" href="{{ cc.href }}">{{ cc.name }}</a>.
+      </p>
+
+      <a href="{{ cc.href }}">
+        <img
+          class="my-0 w-full print:w-32"
+          alt="{{ cc.name }} image"
+          src="/static/by-sa.svg"
+          width="120"
+          height="42"
+        />
+      </a>
+
+      <p>For citation purposes:</p>
+      <blockquote
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:dct="http://purl.org/dc/terms/"
+      >
+        <a
+          class="inline-block"
+          property="dct:title"
+          rel="cc:attributionURL"
+          href="https://www.disjointunion.link{{ page.url }}"
+          >{{ title }}</a
+        >
+        by
+        <a
+          class="inline-block"
+          property="cc:attributionName"
+          rel="cc:attributionURL dct:creator"
+          href="https://www.disjointunion.link/"
+          >Michael Bradley (TheDocTrier)</a
+        >
+        is licensed under
+        <a class="inline-block" href="{{ cc.href }}">{{ cc.name }}</a>.
+      </blockquote>
+
       <p>
         You can view the complete history of every page on this website in the
         <a rel="repo" href="https://github.com/TheDocTrier/disjoint-union"
@@ -55,11 +111,6 @@ links:
           >submit a pull request</a
         >. Also, I generate a <a href="/sitemap/">sitemap</a> for searching all
         titles.
-      </p>
-
-      <p>
-        Read my <a href="/legal/">PRIVACY POLICY</a> before continuing to use
-        this website.
       </p>
     </footer>
   </body>

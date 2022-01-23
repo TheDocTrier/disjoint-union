@@ -1,12 +1,24 @@
 import { JSDOM } from "jsdom";
 import { DateTime } from "luxon";
+const is_prod = process.env.NODE_ENV === "production";
 
 const config = function (eleventyConfig: any) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.ignores.add("./node_modules/");
+  eleventyConfig.addWatchTarget("./src/style.css");
 
-  eleventyConfig.addPassthroughCopy("src/static");
-  eleventyConfig.addPassthroughCopy("src/_redirects");
+  eleventyConfig.addPassthroughCopy("./src/static");
+  if (!is_prod) eleventyConfig.addPassthroughCopy("./static");
+  eleventyConfig.addPassthroughCopy("./src/_redirects");
+
+  // generate static urls
+  eleventyConfig.addFilter("static", function (r: string) {
+    if (is_prod) {
+      return `https://static.disjointunion.link${r}`;
+    } else {
+      return `/static${r}`;
+    }
+  });
 
   // collection for sitemap
   eleventyConfig.addCollection("allByUrl", function (collectionApi) {
@@ -29,6 +41,13 @@ const config = function (eleventyConfig: any) {
       `<a rel="${rel}" href="${href}">${name}</a>`
   );
 
+  // image with thumbnail helper
+  eleventyConfig.addShortcode(
+    "imgT",
+    (src: string, alt: string, full: string) =>
+      `<a title="${alt}" href="${full}"><img alt="${alt}" src="${src}"/></a>`
+  );
+
   // my account helper
   eleventyConfig.addGlobalData("my", {
     ao3: "https://archiveofourown.org/users/TheDocTrier",
@@ -42,6 +61,7 @@ const config = function (eleventyConfig: any) {
     internetarchive: "https://archive.org/details/@tankobot",
     itch: "https://thedoctrier.itch.io/",
     kofi: "https://ko-fi.com/thedoctrier",
+    liberapay: "https://liberapay.com/TheDocTrier/",
     patreon: "https://www.patreon.com/thedoctrier",
     picarto: "https://picarto.tv/TheDocTrier",
     reddit: "https://www.reddit.com/user/TheDocTrier",
@@ -62,17 +82,10 @@ const config = function (eleventyConfig: any) {
   eleventyConfig.addFilter("fmtDate", fmtDate);
 
   // licenses
-  const licenses: { [code: string]: { name: string; href: string } } = {
-    "by-sa": {
-      name: "CC-BY-SA 4.0",
-      href: "https://creativecommons.org/licenses/by-sa/4.0/",
-    },
-  };
-  eleventyConfig.addFilter(
-    "linkLicense",
-    (code) =>
-      `<a class="u-license" href="${licenses[code].href}">${licenses[code].name}</a>`
-  );
+  eleventyConfig.addGlobalData("cc", {
+    name: "CC BY-SA 4.0",
+    href: "https://creativecommons.org/licenses/by-sa/4.0/",
+  });
 
   // markdown
   let mdLib = require("markdown-it");
@@ -91,6 +104,7 @@ const config = function (eleventyConfig: any) {
     `<span class="emoji" title="${token[idx].markup}">${token[idx].content}</span>`;
 
   eleventyConfig.setLibrary("md", md);
+  eleventyConfig.addFilter("markdown", (x) => md.renderInline(x));
 
   // code adapted from sardinev's external-links plugin (MIT license)
   eleventyConfig.addTransform(

@@ -9,7 +9,7 @@ pagination:
 <section class="h-feed">
   <h1 class="p-name">{{ title }}</h1>
 
-  {% if not loop.index0 %} {{ content | safe }} {% endif %}
+  {% if not pagination.pageNumber %} {{ content | safe }} {% endif %}
 
   <table>
     <thead>
@@ -25,6 +25,9 @@ pagination:
           <a class="p-name u-url" href="{{ post.url }}">
             {{ post.data.title }}
           </a>
+          {% if post.data.summary %}
+          <div class="p-summary">{{ post.data.summary | markdown | safe }}</div>
+          {% endif %}
         </td>
         <td class="dt-published">{{ post.date | fmtDate }}</td>
       </tr>

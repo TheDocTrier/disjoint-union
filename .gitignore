@@ -2,3 +2,5 @@
 node_modules
 .eleventy.js
 _site
+
+/static/

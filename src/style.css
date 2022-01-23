@@ -13,6 +13,10 @@ html {
   }
 }
 
+.main-paper {
+  @apply m-4 p-4 md:paper mx-auto;
+}
+
 .invert-button {
   @apply px-2 border-black hover:bg-black hover:text-white;
 }

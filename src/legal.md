@@ -10,7 +10,7 @@ By continuing to use this website, you acknowledge that you have read and agree 
 ## General Disclaimer
 
 Be prepared to see **anything** on this website.
-Although rare, I may write about potentially **objectionable** subjects.
+I may write about potentially **objectionable** subjects.
 Do not browse this website if you are concerned you may see something objectionable.
 Additionally, any link or reference on this website may be pointing to objectionable content.
 

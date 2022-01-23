@@ -1,11 +1,24 @@
 ---
 layout: main-layout
-# toc, when, date, updated, license
-# image ( src, height, width )
+# toc, when, date, updated
+# image ( src, height, width, alt )
 # series
+# summary
 ---
 
 {% from "page-nav.html" import pageNav %}
+<!-- Series of Posts -->
+{% if series %}
+<!-- Get Neighbors -->
+{% set pages = collections[series] | reverse %}
+<!---->
+{% set prev = pages | getPreviousCollectionItem(page) %}
+<!---->
+{% set next = pages | getNextCollectionItem(page) %}
+<!---->
+{% set hrefs = pages | map("url") %}
+<!---->
+{% endif %}
 
 <article class="h-entry">
   <h1 class="p-name">{{ title }}</h1>
@@ -17,6 +30,14 @@ layout: main-layout
       >{{ when | fmtDate }}</time
     >. {% endif %}
 
+    <!-- Summary -->
+    {% if summary %}
+    <div class="m-2 p-2">
+      <div class="font-bold">Summary:</div>
+      <div class="p-summary">{{ summary | markdown | safe }}</div>
+    </div>
+    {% endif %}
+
     <!-- Image -->
     {% if image %} {% set imgBlock %}
     <img
@@ -24,9 +45,10 @@ layout: main-layout
       src="{{ image.src }}"
       height="{{ image.height }}"
       width="{{ image.width }}"
+      alt="{{ image.alt }}"
     />
     {% endset %} {% if next %}
-    <a href="{{ next }}">{{ imgBlock | safe }}</a>
+    <a href="{{ next.url }}">{{ imgBlock | safe }}</a>
     {% else %} {{ imgBlock | safe }} {% endif %} {% endif %}
 
     <!-- Table of Contents -->
@@ -53,7 +75,8 @@ layout: main-layout
     <a
       href="https://github.com/TheDocTrier/disjoint-union/blame/eleventy{{ page.inputPath.slice(1) }}"
       >blame</a
-    >)
+    >
+    for post history)
   </div>
 
   <!-- Call To Action -->
@@ -82,21 +105,6 @@ layout: main-layout
   </div>
   {% endif %}
 
-  <!-- Copyright -->
-  {% if license %}
-  <div>This post is licensed under {{ license | linkLicense | safe }}.</div>
-  {% endif %}
-
-  <!-- Series of Posts -->
-  {% if series %}
-  <!-- Get Neighbors -->
-  {% set pages = collections[series] | reverse %}
-  <!---->
-  {% set prev = pages | getPreviousCollectionItem(page) %}
-  <!---->
-  {% set next = pages | getNextCollectionItem(page) %}
-  <!---->
-  {% set hrefs = pages | map("url") %}
   <!-- Render Page Nav -->
-  {{ pageNav(page.url, prev.url, next.url, hrefs) }} {% endif %}
+  {% if series %} {{ pageNav(page.url, prev.url, next.url, hrefs) }} {% endif %}
 </article>
