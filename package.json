@@ -20,7 +20,8 @@
     "watch": "yarn concurrently -k \"yarn:watch-*\"",
     "prod": "yarn clean && yarn concurrently \"yarn:prod-*\"",
     "serve": "yarn http-server _site -gba localhost -p 1313 -c-1",
-    "start": "yarn prod && yarn serve"
+    "start": "yarn prod && yarn serve",
+    "static-up": "wrap () { rsync -r --del --progress static/ \"${1}:static.disjointunion.link\"; }; wrap"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-beta.10",

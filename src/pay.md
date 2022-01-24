@@ -48,8 +48,8 @@ If for whatever reason, you would rather make **anonymous** donations, or extrem
 
 ## One-time
 
-Sometimes, however, recurring payments isn't the most practical option.
-One-time payments may be used for a variety of reasons.
+Sometimes, recurring payments aren't the most practical option.
+One-time payments may be used instead.
 If you want to show support for a *one-off* work, a *one-time* payment is appreciated.
 
 For one-time support, you can use my [Ko-fi]({{ my.kofi }}).

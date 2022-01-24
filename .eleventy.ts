@@ -12,13 +12,14 @@ const config = function (eleventyConfig: any) {
   eleventyConfig.addPassthroughCopy("./src/_redirects");
 
   // generate static urls
-  eleventyConfig.addFilter("static", function (r: string) {
+  function getStatic(r: string) {
     if (is_prod) {
       return `https://static.disjointunion.link${r}`;
     } else {
       return `/static${r}`;
     }
-  });
+  }
+  eleventyConfig.addFilter("static", getStatic);
 
   // collection for sitemap
   eleventyConfig.addCollection("allByUrl", function (collectionApi) {
@@ -41,12 +42,25 @@ const config = function (eleventyConfig: any) {
       `<a rel="${rel}" href="${href}">${name}</a>`
   );
 
+  // resolve local paths
+  function resolve(path: string) {
+    return path.startsWith("/") ? path : this.page.url + path;
+  }
+  eleventyConfig.addFilter("resolve", resolve);
+
   // image with thumbnail helper
-  eleventyConfig.addShortcode(
-    "imgT",
-    (src: string, alt: string, full: string) =>
-      `<a title="${alt}" href="${full}"><img alt="${alt}" src="${src}"/></a>`
-  );
+  const imgT = (thumb: string, alt: string, full: string) =>
+    `<a title="${alt}" href="${full}"><img alt="${alt}" src="${thumb}"/></a>`;
+  eleventyConfig.addShortcode("imgT", imgT);
+  function imgST(name: string, alt: string) {
+    const resolved: string = resolve.bind(this)(name);
+    return imgT(
+      getStatic(resolved.replace(/\..+?$/, "_thumb$&")),
+      alt,
+      getStatic(resolved)
+    );
+  }
+  eleventyConfig.addShortcode("imgST", imgST);
 
   // my account helper
   eleventyConfig.addGlobalData("my", {
