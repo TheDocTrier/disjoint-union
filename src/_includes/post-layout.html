@@ -45,14 +45,15 @@ layout: main-layout
     <!-- Image -->
     {% if image %} {% set imgBlock %}
     <img
+      id="page-photo"
       class="u-photo w-full border-black border-2"
-      src="{{ image.src }}"
+      src="{{ image.src | static }}"
       height="{{ image.height }}"
       width="{{ image.width }}"
       alt="{{ image.alt }}"
     />
     {% endset %} {% if next %}
-    <a href="{{ next.url }}">{{ imgBlock | safe }}</a>
+    <a href="{{ next.url }}#page-photo">{{ imgBlock | safe }}</a>
     {% else %} {{ imgBlock | safe }} {% endif %} {% endif %}
 
     <!-- Table of Contents -->
