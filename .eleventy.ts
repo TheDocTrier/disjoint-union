@@ -1,19 +1,23 @@
 import { JSDOM } from "jsdom";
 import { DateTime } from "luxon";
-const is_prod = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV === "production";
 
 const config = function (eleventyConfig: any) {
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.ignores.add("./node_modules/");
+  eleventyConfig.ignores.add("node_modules/**");
   eleventyConfig.addWatchTarget("./src/style.css");
+  eleventyConfig.addPlugin(require("eleventy-plugin-ignore"));
 
   eleventyConfig.addPassthroughCopy("./src/static");
-  if (!is_prod) eleventyConfig.addPassthroughCopy("./static");
+  if (!isProd) eleventyConfig.addPassthroughCopy("./static");
   eleventyConfig.addPassthroughCopy("./src/_redirects");
+
+  // global production detection
+  eleventyConfig.addGlobalData("isProd", isProd);
 
   // generate static urls
   function getStatic(r: string) {
-    if (is_prod) {
+    if (isProd) {
       return `https://static.disjointunion.link${r}`;
     } else {
       return `/static${r}`;
@@ -33,6 +37,11 @@ const config = function (eleventyConfig: any) {
   // select list of attributes from a list of objects
   eleventyConfig.addFilter("map", (l: unknown[], attr: string) =>
     l.map((x) => x[attr])
+  );
+
+  // array-ify if only a single non-array
+  eleventyConfig.addFilter("arrayify", (x: unknown) =>
+    Array.isArray(x) ? x : [x]
   );
 
   // rel=me helper
@@ -62,48 +71,29 @@ const config = function (eleventyConfig: any) {
   }
   eleventyConfig.addShortcode("imgST", imgST);
 
-  // my account helper
-  eleventyConfig.addGlobalData("my", {
-    ao3: "https://archiveofourown.org/users/TheDocTrier",
-    artstation: "https://www.artstation.com/thedoctrier",
-    discord: "https://discord.com",
-    deviantart: "https://www.deviantart.com/thedoctrier",
-    e621: "https://e621.net/users/678526",
-    furaffinity: "https://www.furaffinity.net/user/thedoctrier/",
-    github: "https://github.com/TheDocTrier",
-    goodreads: "https://www.goodreads.com/user/show/117546295-michael-bradley",
-    internetarchive: "https://archive.org/details/@tankobot",
-    itch: "https://thedoctrier.itch.io/",
-    kofi: "https://ko-fi.com/thedoctrier",
-    liberapay: "https://liberapay.com/TheDocTrier/",
-    patreon: "https://www.patreon.com/thedoctrier",
-    picarto: "https://picarto.tv/TheDocTrier",
-    reddit: "https://www.reddit.com/user/TheDocTrier",
-    stackexchange: "https://stackexchange.com/users/19080546/thedoctrier",
-    telegram: "https://t.me/TheDocTrier",
-    twitch: "https://www.twitch.tv/doctrier",
-    twitter: "https://twitter.com/TheDocTrier",
-    wikifur: "https://en.wikifur.com/wiki/User:TheDocTrier",
-    wikipedia: "https://en.wikipedia.org/wiki/User:TheDocTrier",
-  });
-
   // Table of Contents
   eleventyConfig.addPlugin(require("eleventy-plugin-toc"), { ul: true });
 
-  // typical date formatting
-  const fmtDate = (date: Date, fmt = "yyyy-MM-dd, t (ZZZZ)") =>
-    DateTime.fromJSDate(date).setZone("America/Los_Angeles").toFormat(fmt);
-  eleventyConfig.addFilter("fmtDate", fmtDate);
-
-  // licenses
-  eleventyConfig.addGlobalData("cc", {
-    name: "CC BY-SA 4.0",
-    href: "https://creativecommons.org/licenses/by-sa/4.0/",
-  });
+  // tag date as if its year-month-day is given in Los_Angeles tz
+  const tagDate = (date: Date, cls: string) => {
+    const origDate = DateTime.fromJSDate(date, { zone: "utc" });
+    const lDate = DateTime.fromObject(
+      {
+        year: origDate.year,
+        month: origDate.month,
+        day: origDate.day,
+      },
+      { zone: "America/Los_Angeles" }
+    );
+    return `<time datetime="${lDate.toISO()}" class="${cls}">${lDate.toFormat(
+      "yyyy-MM-dd"
+    )}</time>`;
+  };
+  eleventyConfig.addFilter("tagDate", tagDate);
 
   // markdown
-  let mdLib = require("markdown-it");
-  let md = mdLib({ html: true })
+  const mdLib = require("markdown-it");
+  let md = mdLib({ html: true, linkify: true, typographer: true })
     .use(require("markdown-it-anchor"), {
       slugify: eleventyConfig.getFilter("slugify"),
     })

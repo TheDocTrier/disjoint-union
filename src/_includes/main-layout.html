@@ -22,13 +22,24 @@ links:
     <link rel="icon" href="/static/favicon.png" />
     <link rel="stylesheet" href="/style.css" />
 
+    <!-- Page Views -->
+    {#{% if isProd %}
+    <script
+      defer
+      data-domain="www.disjointunion.link"
+      data-api="/pls/api/event"
+      src="/pls/js/script.js"
+    ></script>
+    {% endif %}#}
+
+    <!-- Feeds -->
     {% for feed in collections.feed %}
     <link rel="feed" href="{{ feed.url }}" title="{{ feed.data.title }}" />
     {% endfor %}
 
     <title>{{ title }}{{ postfix }}</title>
   </head>
-  <body class="max-w-screen-md container mx-auto pb-8">
+  <body class="max-w-screen-md mx-auto pb-8">
     <header class="m-2">
       <div class="flex flex-wrap justify-between">
         <span>
@@ -37,6 +48,7 @@ links:
             src="/static/favicon.svg"
             width="32"
             height="32"
+            alt="Disjoint Union logo"
           />
           <a class="mb-2 inline-block text-xl font-bold nav-button" href="/">
             DisjointUnion.Link
@@ -52,16 +64,19 @@ links:
         {% endfor %}
       </nav>
     </header>
-    <div class="main-paper prose">
+    <section class="main-paper prose">
       My content is
       <b>free to use, distribute, and modify</b> (see
       <a href="#page-license">license below</a>).
-    </div>
-    <main class="main-paper prose">{{ content | safe }}</main>
+    </section>
+    <main class="mx-auto p-4 prose">{{ content | safe }}</main>
     <footer class="main-paper prose">
       <p id="page-license">
         My <em>original content</em> on this page is licensed under
         <a rel="license" href="{{ cc.href }}">{{ cc.name }}</a>.
+        <br />
+        See "<a rel="payment" href="/pay/">If Free, Why Pay</a>" for an
+        explanation of why.
       </p>
 
       <a href="{{ cc.href }}">

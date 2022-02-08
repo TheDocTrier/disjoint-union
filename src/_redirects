@@ -1,2 +1,5 @@
 https://dul.ink/* https://disjointunion.link/:splat 301!
 https://www.dul.ink/* https://www.disjointunion.link/:splat 301!
+
+/pls/js/script.js https://plausible.io/js/plausible.js 200
+/pls/api/event https://plausible.io/api/event 200

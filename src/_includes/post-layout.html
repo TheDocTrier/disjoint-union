@@ -4,6 +4,7 @@ layout: main-layout
 # image ( src, height, width, alt )
 # series
 # summary
+# talk: one or an array of hrefs
 ---
 
 {% from "page-nav.html" import pageNav %}
@@ -25,16 +26,19 @@ layout: main-layout
 
   <section class="e-content">
     <!-- When -->
-    {% if when %} This post focuses on events following
-    <time class="dt-when" datetime="{{ when.toISOString() }}"
-      >{{ when | fmtDate }}</time
-    >. {% endif %}
+    {% if when %}
+    <p>
+      This post focuses on events following {{ when | tagDate("dt-when") | safe
+      }}.
+    </p>
+    {% endif %}
 
     <!-- Summary -->
     {% if summary %}
     <div class="m-2 p-2">
       <div class="font-bold">Summary:</div>
       <div class="p-summary">{{ summary | markdown | safe }}</div>
+      <div class="italic">Words: {{ content | striptags | wordcount }}</div>
     </div>
     {% endif %}
 
@@ -88,20 +92,27 @@ layout: main-layout
   </b>
 
   <!-- Created Date -->
-  <div>
-    Created:
-    <time class="dt-published" datetime="{{ date.toISOString() }}">
-      {{ date | fmtDate }}
-    </time>
-  </div>
+  <div>Created: {{ date | tagDate("dt-published") | safe }}</div>
 
   <!-- Updated Date -->
   {% if updated %}
-  <div>
-    Updated:
-    <time class="dt-updated" datetime="{{ updated.toISOString() }}">
-      {{ updated | fmtDate }}
-    </time>
+  <div>Updated: {{ updated | tagDate("dt-updated") | safe }}</div>
+  {% endif %}
+
+  <!-- Talk Pages -->
+  {% if talk %}
+  <hr />
+  <div id="page-discuss">
+    <p class="font-bold">Places to discuss this post:</p>
+    <ul>
+      {% for t in talk | arrayify %}
+      <li>
+        {% if t.startsWith("http") %}
+        <a class="u-syndication" href="{{ t }}">{{ t }}</a>
+        {% else %} {{ t | markdown | safe }} {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
   </div>
   {% endif %}
 

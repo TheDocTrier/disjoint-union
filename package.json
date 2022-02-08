@@ -24,7 +24,7 @@
     "static-up": "wrap () { rsync -r --del --progress static/ \"${1}:static.disjointunion.link\"; }; wrap"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0-beta.10",
+    "@11ty/eleventy": "https://github.com/TheDocTrier/eleventy.git#empty-pagination",
     "@tailwindcss/typography": "^0.5.0",
     "@types/jsdom": "^16.2.13",
     "@types/luxon": "^2.0.8",
@@ -33,6 +33,7 @@
     "concurrently": "^7.0.0",
     "cssnano": "^5.0.11",
     "del-cli": "^4.0.1",
+    "eleventy-plugin-ignore": "^0.1.4",
     "eleventy-plugin-toc": "^1.1.5",
     "http-server": "^14.0.0",
     "jsdom": "^19.0.0",

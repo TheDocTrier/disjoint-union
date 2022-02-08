@@ -12,17 +12,17 @@ It contains a *privacy policy* and a *content disclaimer*.
 # Who is <span class="p-name italic whitespace-pre">Michael Bradley</span>
 
 I am many things (see the [links below](#links)).
-More officially: I am a <a class="p-role" href="https://en.wikipedia.org/wiki/Mathematics">mathematician</a> :mage:.
-Less officially: I am a programmer :computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism) :people_hugging:, an [essayist](/essays/) :pen:, a [furry](https://en.wikifur.com/wiki/Furry) :raccoon:, and perhaps an [artist](/art/) :black_nib: :art: too.
+More officially: I am a <a class="p-role" href="https://en.wikipedia.org/wiki/Mathematics">mathematician</a>&nbsp;:mage:.
+Less officially: I am a programmer&nbsp;:computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism)&nbsp;:people_hugging:, an [essayist](/essays/)&nbsp;:pen:, a [furry](https://en.wikifur.com/wiki/Furry)&nbsp;:raccoon:, and perhaps an [artist](/art/)&nbsp;:black_nib:&nbsp;:art: too.
 
 Here is some common information that you'll probably see in multiple places on the Internet:
 
-* The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://www.disjointunion.link/">Disjoint Union</a> :disjoint_union:, is my personal (and official) creative depository.
-* I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">America/Los_Angeles</a> :clock7: time zone.
-* My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code> :label: (post 2020, pronounced <span class="whitespace-pre">try-er</span>), however you may also see my decommissioned handle `Tankobot` (pre 2020).
-* My <a class="u-photo" href="/static/pfp.png">current profile picture</a> :framed_picture: is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
+* The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://www.disjointunion.link/">Disjoint Union</a>&nbsp;:disjoint_union:, is my personal (and official) creative depository.
+* I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">America/Los_Angeles</a>&nbsp;:clock7: time zone.
+* My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code>&nbsp;:label: (post 2020, pronounced <span class="whitespace-pre">try-er</span>), however you may also see my decommissioned handle `Tankobot` (pre 2020).
+* My <a class="u-photo" href="{{ "/pfp.png" | static }}">current profile picture</a>&nbsp;:framed_picture: is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
   * I chose it because, while clearly not the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle), it still bears a peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).
-  * Indeed, Pascal's mod 6 is the intersection of [Pascal's mod 2](/static/pascal/mod2.png) (the Sierpiński) and [Pascal's mod 3](/static/pascal/mod3.png).
+  * Indeed, Pascal's mod 6 is the intersection of [Pascal's mod 2]({{ "/pascal/mod2.png" | static }}) (the Sierpiński) and [Pascal's mod 3]({{ "/pascal/mod3.png" | static }}).
 
 ## Advocacy
 

@@ -29,7 +29,16 @@ pagination:
           <div class="p-summary">{{ post.data.summary | markdown | safe }}</div>
           {% endif %}
         </td>
-        <td class="dt-published">{{ post.date | fmtDate }}</td>
+        <td>
+          <!-- Published Date -->
+          {{ post.date | tagDate("dt-published") | safe }}
+          <!-- Updated -->
+          {% if post.data.updated %} <br />
+          <strong>
+            {{ post.data.updated | tagDate("dt-updated") | safe }}
+          </strong>
+          {% endif %}
+        </td>
       </tr>
       {% endfor %}
     </tbody>
