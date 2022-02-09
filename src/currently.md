@@ -6,7 +6,7 @@ date: 2021-12-05
 updated: 2022-02-07
 ---
 
-This page is my way of publicizing what projects are (or should) be receiving my attention.
+This page is my way of publicizing what projects are (or should be) receiving my attention.
 Like many other people on the Internet, I don't have a strict schedule for most of these.
 I try to provide an interval of time for each project during which you can expect an update.
 
