@@ -1,7 +1,7 @@
 ---
 layout: main-layout
 title: Michael Bradley
-postfix: ""
+postfix: false
 ---
 
 Please read my [LEGAL](/legal/) page before continuing to use this site.
@@ -26,7 +26,22 @@ Here is some common information that you'll probably see in multiple places on t
 
 ## Advocacy
 
-I am a passionate supporter of the [American Civil Liberties Union (ACLU)](https://www.aclu.org), the [Electronic Frontier Foundation (EFF)](https://www.eff.org), and the [Free Software Foundation (FSF)](https://www.fsf.org).
+Generally speaking, I am a supporter of
+
+* the [American Civil Liberties Union (ACLU)](https://www.aclu.org),
+  * **for supporting the rights of** those with disabilities, people with HIV, immigrants, juveniles, people of all races, members of the LGBTQ community, the incarcerated, and women,
+  * **and for protecting** freedom of speech, human privacy, religious liberty, reproductive freedom, and voting rights,
+* the [Comic Book Legal Defense Fund (CBLDF)](http://cbldf.org),
+  * for defending freedom of speech and combating censorship,
+  * see the article [*Why Defend Freedom of Icky Speech*](https://journal.neilgaiman.com/2008/12/why-defend-freedom-of-icky-speech.html) by Neil Gaiman, writer of *Coraline*, *American Gods*, and *Good Omens*, who is also an avid supporter of the CBLDF,
+* [Wikipedia: The Free Encyclopedia](https://en.wikipedia.org/wiki/Wikipedia),
+  * for providing the largest encyclopedia of [free content](https://freedomdefined.org/Definition) managed through the open collaboration of volunteers,
+* the [Electronic Frontier Foundation (EFF)](https://www.eff.org),
+  * for promoting freedom of speech, human privacy, network neutrality, and procedural transparency,
+  * and for criticizing digital rights management (DRM) and government surveillance,
+* and the [Free Software Foundation (FSF)](https://www.fsf.org),
+  * for supporting free software (see [GNU/Linux](https://www.gnu.org/)) and neutral hardware,
+  * and for criticizing digital rights management (DRM) and software patents.
 
 ## Links
 

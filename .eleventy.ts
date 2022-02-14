@@ -44,6 +44,8 @@ const config = function (eleventyConfig: any) {
     Array.isArray(x) ? x : [x]
   );
 
+  eleventyConfig.addFilter("concat", (a: any[], b: any[]) => a.concat(b));
+
   // rel=me helper
   eleventyConfig.addShortcode(
     "rel",

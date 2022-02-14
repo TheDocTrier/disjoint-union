@@ -1,6 +1,7 @@
 ---
 title: Untitled
-postfix: " - Disjoint Union"
+crumbs: []
+postfix: true
 links:
   - [About Me, /]
   - [FAQ, /faq/]
@@ -37,7 +38,12 @@ links:
     <link rel="feed" href="{{ feed.url }}" title="{{ feed.data.title }}" />
     {% endfor %}
 
-    <title>{{ title }}{{ postfix }}</title>
+    <!-- Title -->
+    {% if postfix %}
+    <title>{{ [title] | concat(crumbs) | join(" - ") }} - Disjoint Union</title>
+    {% else %}
+    <title>{{ title }}</title>
+    {% endif %}
   </head>
   <body class="max-w-screen-md mx-auto pb-8">
     <header class="m-2">

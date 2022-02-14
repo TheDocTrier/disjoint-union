@@ -22,6 +22,8 @@ pagination:
       {% for post in posts %}
       <tr class="h-entry">
         <td>
+          {% if post.data.crumbs.length %} [ {{ post.data.crumbs | join(" / ")
+          }} ] {% endif %}
           <a class="p-name u-url" href="{{ post.url }}">
             {{ post.data.title }}
           </a>
