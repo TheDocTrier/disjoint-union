@@ -67,6 +67,7 @@ Be warned, there may be mature materials behind any of the links given.
 | Itch                  | [TheDocTrier]({{ my.itch }})                     |
 | Ko-fi **Payment**     | {% rel "payment", "TheDocTrier", my.kofi %}      |
 | Liberapay **Payment** | {% rel "payment", "TheDocTrier", my.liberapay %} |
+| Miraheze              | [TheDocTrier]({{ my.miraheze }})                 |
 | Patreon **Payment**   | {% rel "payment", "TheDocTrier", my.patreon %}   |
 | Picarto               | [TheDocTrier]({{ my.picarto }})                  |
 | Reddit                | [TheDocTrier]({{ my.reddit }})                   |
