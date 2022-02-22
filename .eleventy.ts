@@ -95,7 +95,7 @@ const config = function (eleventyConfig: any) {
 
   // markdown
   const mdLib = require("markdown-it");
-  let md = mdLib({ html: true, linkify: true, typographer: true })
+  let md = mdLib({ html: true, linkify: false, typographer: true })
     .use(require("markdown-it-anchor"), {
       slugify: eleventyConfig.getFilter("slugify"),
     })
