@@ -119,6 +119,9 @@ layout: main-layout
   </div>
   {% endif %}
 
+  <!-- Canonical Link -->
+  <a class="u-url hidden" href="{{ page.url }}">Canonical Link</a>
+
   <!-- Render Page Nav -->
   {% if series %} {{ pageNav(page.url, prev.url, next.url, hrefs) }} {% endif %}
 </article>
