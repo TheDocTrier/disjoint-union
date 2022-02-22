@@ -60,7 +60,6 @@ Be warned, there may be mature materials behind any of the links given.
 | DeviantArt            | [TheDocTrier]({{ my.deviantart }})               |
 | Discord               | [TheDocTrier#4824]({{ my.discord }})             |
 | e621                  | [TheDocTrier]({{ my.e621 }})                     |
-| Fur Affinity          | [TheDocTrier]({{ my.furaffinity }})              |
 | GitHub                | {% rel "me", "TheDocTrier", my.github %}         |
 | Goodreads             | [Michael Bradley]({{ my.goodreads }})            |
 | Internet Archive      | [Tankobot]({{ my.internetarchive }})             |
@@ -70,6 +69,7 @@ Be warned, there may be mature materials behind any of the links given.
 | Miraheze              | [TheDocTrier]({{ my.miraheze }})                 |
 | Patreon **Payment**   | {% rel "payment", "TheDocTrier", my.patreon %}   |
 | Picarto               | [TheDocTrier]({{ my.picarto }})                  |
+| Piczel.tv             | [TheDocTrier]({{ my.piczel }})                   |
 | Reddit                | [TheDocTrier]({{ my.reddit }})                   |
 | [Signal][signal]      | Must be mutuals.                                 |
 | Stack Exchange        | [TheDocTrier]({{ my.stackexchange }})            |
