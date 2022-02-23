@@ -4,4 +4,4 @@ https://www.dul.ink/* https://www.disjointunion.link/:splat 301!
 /pls/js/script.js https://plausible.io/js/plausible.js 200
 /pls/api/event https://plausible.io/api/event 200
 
-/static/* https://static.disjointunion/:splat 307!
+/static/* https://static.disjointunion.link/:splat 307!
