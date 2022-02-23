@@ -8,7 +8,7 @@ const config = function (eleventyConfig: any) {
   eleventyConfig.addWatchTarget("./src/style.css");
   eleventyConfig.addPlugin(require("eleventy-plugin-ignore"));
 
-  eleventyConfig.addPassthroughCopy("./src/static");
+  eleventyConfig.addPassthroughCopy("./src/basic");
   if (!isProd) eleventyConfig.addPassthroughCopy("./static");
   eleventyConfig.addPassthroughCopy("./src/_redirects");
 
