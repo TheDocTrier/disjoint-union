@@ -17,7 +17,8 @@ const config = function (eleventyConfig: any) {
 
   // generate static urls
   function getStatic(r: string) {
-    if (isProd) {
+    if (false && isProd) {
+      // this was/is a stopgap solution, now we use temporary redirects
       return `https://static.disjointunion.link${r}`;
     } else {
       return `/static${r}`;
