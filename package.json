@@ -18,7 +18,7 @@
     "prod-11ty": "NODE_ENV=production yarn dev-11ty",
     "dev": "concurrently \"yarn:dev-*\"",
     "watch": "concurrently -k \"yarn:watch-*\"",
-    "prod": "yarn clean && concurrently \"yarn:prod-*\" && prettier --write \"_site/**/*.html\"",
+    "prod": "yarn clean && yarn prod-ts && yarn prod-css && yarn prod-11ty && prettier --write \"_site/**/*.html\"",
     "serve": "http-server _site -gba localhost -p 1313 -c-1",
     "start": "yarn prod && yarn serve",
     "static-up": "wrap () { rsync -r --del --progress static/ \"${1}:static.disjointunion.link\"; }; wrap"
