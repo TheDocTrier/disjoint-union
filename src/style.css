@@ -14,7 +14,7 @@ html {
 }
 
 .main-paper {
-  @apply m-4 p-4 md:paper mx-auto;
+  @apply m-4 p-4 md:paper;
 }
 
 .invert-button {

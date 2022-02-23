@@ -70,69 +70,71 @@ links:
         {% endfor %}
       </nav>
     </header>
-    <section class="main-paper prose">
-      My content is
-      <b>free to use, distribute, and modify</b> (see
-      <a href="#page-license">license below</a>).
-    </section>
-    <main class="mx-auto p-4 prose">{{ content | safe }}</main>
-    <footer class="main-paper prose">
-      <p id="page-license">
-        My <em>original content</em> on this page is licensed under
-        <a rel="license" href="{{ cc.href }}">{{ cc.name }}</a>.
-        <br />
-        See "<a rel="payment" href="/pay/">If Free, Why Pay</a>" for an
-        explanation of why.
-      </p>
+    <div class="mx-auto prose prose-sm sm:prose-base">
+      <section class="main-paper">
+        My content is
+        <b>free to use, distribute, and modify</b> (see
+        <a href="#page-license">license below</a>).
+      </section>
+      <main class="p-4">{{ content | safe }}</main>
+      <footer class="main-paper">
+        <p id="page-license">
+          My <em>original content</em> on this page is licensed under
+          <a rel="license" href="{{ cc.href }}">{{ cc.name }}</a>.
+          <br />
+          See "<a rel="payment" href="/pay/">If Free, Why Pay</a>" for an
+          explanation of why.
+        </p>
 
-      <a href="{{ cc.href }}">
-        <img
-          class="my-0 w-full print:w-32"
-          alt="{{ cc.name }} image"
-          src="/static/by-sa.svg"
-          width="120"
-          height="42"
-        />
-      </a>
+        <a href="{{ cc.href }}">
+          <img
+            class="my-0 w-full print:w-32"
+            alt="{{ cc.name }} image"
+            src="/static/by-sa.svg"
+            width="120"
+            height="42"
+          />
+        </a>
 
-      <p>For citation purposes:</p>
-      <blockquote
-        xmlns:cc="http://creativecommons.org/ns#"
-        xmlns:dct="http://purl.org/dc/terms/"
-      >
-        <a
-          class="inline-block"
-          property="dct:title"
-          rel="cc:attributionURL"
-          href="https://www.disjointunion.link{{ page.url }}"
-          >{{ title }}</a
+        <p>For citation purposes:</p>
+        <blockquote
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:dct="http://purl.org/dc/terms/"
         >
-        by
-        <a
-          class="inline-block"
-          property="cc:attributionName"
-          rel="cc:attributionURL dct:creator"
-          href="https://www.disjointunion.link/"
-          >Michael Bradley (TheDocTrier)</a
-        >
-        is licensed under
-        <a class="inline-block" href="{{ cc.href }}">{{ cc.name }}</a>.
-      </blockquote>
+          <a
+            class="inline-block"
+            property="dct:title"
+            rel="cc:attributionURL"
+            href="https://www.disjointunion.link{{ page.url }}"
+            >{{ title }}</a
+          >
+          by
+          <a
+            class="inline-block"
+            property="cc:attributionName"
+            rel="cc:attributionURL dct:creator"
+            href="https://www.disjointunion.link/"
+            >Michael Bradley (TheDocTrier)</a
+          >
+          is licensed under
+          <a class="inline-block" href="{{ cc.href }}">{{ cc.name }}</a>.
+        </blockquote>
 
-      <p>
-        You can view the complete history of every page on this website in the
-        <a rel="repo" href="https://github.com/TheDocTrier/disjoint-union"
-          >git repository</a
-        >. If you see a mistake,
-        <a href="https://github.com/TheDocTrier/disjoint-union/issues"
-          >file an issue</a
-        >
-        or
-        <a href="https://github.com/TheDocTrier/disjoint-union/pulls"
-          >submit a pull request</a
-        >. Also, I generate a <a href="/sitemap/">sitemap</a> for searching all
-        titles.
-      </p>
-    </footer>
+        <p>
+          You can view the complete history of every page on this website in the
+          <a rel="repo" href="https://github.com/TheDocTrier/disjoint-union"
+            >git repository</a
+          >. If you see a mistake,
+          <a href="https://github.com/TheDocTrier/disjoint-union/issues"
+            >file an issue</a
+          >
+          or
+          <a href="https://github.com/TheDocTrier/disjoint-union/pulls"
+            >submit a pull request</a
+          >. Also, I generate a <a href="/sitemap/">sitemap</a> for searching
+          all titles.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
