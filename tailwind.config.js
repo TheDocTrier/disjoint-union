@@ -11,6 +11,9 @@ module.exports = {
               "font-weight": "inherit",
               "font-style": "inherit",
             },
+            a: {
+              "text-underline-offset": "4px",
+            },
           },
         },
       },
