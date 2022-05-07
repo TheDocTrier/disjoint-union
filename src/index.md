@@ -48,7 +48,7 @@ Generally speaking, I am a supporter of
 Here are a bunch of links to my primary accounts across many services (ordered alphabetically).
 Note that I barely access most of these accounts.
 If you want to contact me, I currently recommend my [**Twitter**]({{ my.twitter }}) or my [Telegram]({{ my.telegram }})<sup>[NOT SECURE](https://security.stackexchange.com/a/49802/240649)</sup>, where it's easiest for me to respond quickly.
-You can also try sending an email to <code><a class="u-email" rel="me" href="mailto:thedoctrier@gmail.com">thedoctrier@gmail.com</a></code>, but spam may prevent me from seeing it.
+You can also try sending an email to <code><a class="u-email" rel="me" href="mailto:michael@dul.ink">michael@dul.ink</a></code>, but spam may prevent me from seeing it.
 If you want a more secure option, and we're already [mutuals][mutual], then contact me via [Signal][signal].
 The table given here is supposed to act as more of a *reference* for others (and myself).
 Be warned, there may be mature materials behind any of the links given.
