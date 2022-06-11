@@ -21,7 +21,7 @@
     "prod": "yarn clean && yarn prod-ts && yarn prod-css && yarn prod-11ty && prettier --write \"_site/**/*.html\"",
     "serve": "http-server _site -gba localhost -p 1313 -c-1",
     "start": "yarn prod && yarn serve",
-    "static-up": "wrap () { rsync -r --del --progress static/ \"${1}:static.disjointunion.link\"; }; wrap"
+    "sync": "yarn prod && ./sync.sh"
   },
   "devDependencies": {
     "@11ty/eleventy": "https://github.com/TheDocTrier/eleventy.git#empty-pagination",

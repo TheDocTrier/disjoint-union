@@ -9,7 +9,7 @@ const config = function (eleventyConfig: any) {
   eleventyConfig.addPlugin(require("eleventy-plugin-ignore"));
 
   eleventyConfig.addPassthroughCopy("./src/basic");
-  if (!isProd) eleventyConfig.addPassthroughCopy("./static");
+  eleventyConfig.addPassthroughCopy("./static");
   eleventyConfig.addPassthroughCopy("./src/_redirects");
 
   // global production detection
@@ -17,22 +17,19 @@ const config = function (eleventyConfig: any) {
 
   // generate static urls
   function getStatic(r: string) {
-    if (false && isProd) {
-      // this was/is a stopgap solution, now we use temporary redirects
-      return `https://static.disjointunion.link${r}`;
-    } else {
-      return `/static${r}`;
-    }
+    return `/static${r}`;
   }
   eleventyConfig.addFilter("static", getStatic);
 
   // collection for sitemap
   eleventyConfig.addCollection("allByUrl", function (collectionApi) {
-    return collectionApi.getAll().sort(function (a, b) {
-      if (a.url < b.url) return -1;
-      if (a.url > b.url) return +1;
-      return 0;
-    });
+    return collectionApi
+      .getAll()
+      .sort(function (a: { url: string }, b: { url: string }) {
+        if (a.url < b.url) return -1;
+        if (a.url > b.url) return +1;
+        return 0;
+      });
   });
 
   // select list of attributes from a list of objects
@@ -61,7 +58,7 @@ const config = function (eleventyConfig: any) {
   eleventyConfig.addFilter("resolve", resolve);
 
   // image with thumbnail helper
-  const imgT = (thumb: string, alt: string, full: string) =>
+  const imgT = (thumb: string, alt: string, full: string = thumb) =>
     `<a title="${alt}" href="${full}"><img alt="${alt}" src="${thumb}"/></a>`;
   eleventyConfig.addShortcode("imgT", imgT);
   function imgST(name: string, alt: string) {
