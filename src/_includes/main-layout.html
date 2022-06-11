@@ -27,7 +27,7 @@ links:
     {#{% if isProd %}
     <script
       defer
-      data-domain="www.disjointunion.link"
+      data-domain="www.brooksb.dev"
       data-api="/pls/api/event"
       src="/pls/js/script.js"
     ></script>
@@ -57,14 +57,12 @@ links:
             alt="Disjoint Union logo"
           />
           <a class="mb-2 inline-block text-xl font-bold nav-button" href="/">
-            DisjointUnion.Link
+            Disjoint Union
           </a>
         </span>
         <a class="mx-2 mb-2 text-lg nav-button" href="/legal/">Legal</a>
       </div>
-      <nav
-        class="flex flex-wrap justify-center border-t-8 border-b-8 border-black p-1"
-      >
+      <nav class="flex flex-wrap justify-center border-t-8 border-black p-1">
         {% for name, path in links %}
         <a class="m-1 text-lg nav-button" href="{{ path }}"> {{ name }} </a>
         {% endfor %}
@@ -105,7 +103,7 @@ links:
             class="inline-block"
             property="dct:title"
             rel="cc:attributionURL"
-            href="https://www.disjointunion.link{{ page.url }}"
+            href="https://www.brooksb.dev{{ page.url }}"
             >{{ title }}</a
           >
           by
@@ -113,7 +111,7 @@ links:
             class="inline-block"
             property="cc:attributionName"
             rel="cc:attributionURL dct:creator"
-            href="https://www.disjointunion.link/"
+            href="https://brooksb.dev/"
             >Michael Bradley (TheDocTrier)</a
           >
           is licensed under

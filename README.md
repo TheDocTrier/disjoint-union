@@ -1,2 +1,3 @@
-# disjointunion
-https://disjointunion.link
+# Disjoint Union
+
+https://www.brooksb.dev
