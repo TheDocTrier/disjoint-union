@@ -17,9 +17,10 @@ Less officially: I am a [programmer]({{ my.github }})&nbsp;:computer:, a [secula
 
 Here is some common information that you'll probably see in multiple places on the Internet:
 
-* The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://brooksb.dev">Disjoint Union</a>&nbsp;:disjoint_union:, is my personal (and official) creative depository. To explain the domain, "Brooks" is the name of my grandfather.
+* The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://brooksb.dev">Disjoint Union</a>&nbsp;:disjoint_union:, is my personal (and official) creative depository.
 * I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">America/Los_Angeles</a>&nbsp;:clock7: time zone.
-* My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code>&nbsp;:label: (post 2020, pronounced <span class="whitespace-pre">try-er</span>), however you may also see my decommissioned handle `Tankobot` (pre 2020).
+* My full name is <span class="p-given-name">Michael</span> <span class="p-additional-name italic">Brooks</span> <span class="p-family-name">Bradley</span>.
+* My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code>&nbsp;:label: (post 2020, a la *trier of fact*), however you may also see my decommissioned handle `Tankobot` (pre 2020).
 * My <a class="u-photo" href="{{ '/pfp.png' | static }}">current profile picture</a>&nbsp;:framed_picture: is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
   * I chose it because, while clearly not the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle), it still bears a peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).
   * Indeed, Pascal's mod 6 is the intersection of [Pascal's mod 2]({{"/pascal/mod2.png"|static}}) (the Sierpiński) and [Pascal's mod 3]({{"/pascal/mod3.png"|static}}).
