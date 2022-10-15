@@ -11,9 +11,13 @@ It contains a *privacy policy* and a *content disclaimer*.
 
 # Who is <span class="p-name italic whitespace-pre">Michael Bradley</span>
 
-I am many things (see the [links below](#links)).
+<div class="p-note">
+
+[I am many things](#links).
 More officially: I am a <a class="p-role" href="https://en.wikipedia.org/wiki/Mathematics">mathematician</a>&nbsp;:mage:.
 Less officially: I am a [programmer]({{ my.github }})&nbsp;:computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism)&nbsp;:people_hugging:, an [essayist](/essays/)&nbsp;:pen:, a [furry](https://en.wikifur.com/wiki/Furry)&nbsp;:raccoon:, and perhaps an [artist](/art/)&nbsp;:black_nib:&nbsp;:art: too.
+
+</div>
 
 Here is some common information that you'll probably see in multiple places on the Internet:
 
