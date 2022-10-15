@@ -12,6 +12,7 @@ module.exports = {
               "font-style": "inherit",
             },
             a: {
+              "text-decoration-thickness": "1px",
               "text-underline-offset": "4px",
             },
           },
