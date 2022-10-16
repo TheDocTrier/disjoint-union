@@ -23,7 +23,7 @@ Here is some common information that you'll probably see in multiple places on t
 
 * The website you are currently on, <a class="u-url whitespace-pre" rel="me" href="https://brooksb.dev">Disjoint Union</a>&nbsp;:disjoint_union:, is my personal (and official) creative depository.
 * I live in the <a class="p-tz" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">America/Los_Angeles</a>&nbsp;:clock7: time zone.
-* My full name is <span class="p-given-name">Michael</span> <span class="p-additional-name italic">Brooks</span> <span class="p-family-name">Bradley</span>.
+* My full name is <span class="p-given-name">Michael</span> <span class="p-additional-name italic">Brooks</span> <span class="p-family-name">Bradley</span>, hence my email address <code><a class="u-email" rel="me" href="mailto:michael@brooksb.dev">michael@brooksb.dev</a></code>.
 * My web handle is typically <code><span class="p-nickname">TheDocTrier</span></code>&nbsp;:label: (post 2020, a la *trier of fact*), however you may also see my decommissioned handle `Tankobot` (pre 2020).
 * My <a class="u-photo" href="{{ '/pfp.png' | static }}">current profile picture</a>&nbsp;:framed_picture: is the first 256 rows of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) mod 6.
   * I chose it because, while clearly not the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle), it still bears a peculiar similarity (the Sierpiński triangle can be gotten by using a modulus of 2 instead of 6).
@@ -52,8 +52,10 @@ Generally speaking, I am a supporter of
 
 Here are a bunch of links to my primary accounts across many services (ordered alphabetically).
 Note that I barely access most of these accounts.
+**Critically, you should only assume I had control over an account if it listed here explicitly.**
+However, this does not imply that I still control the account as security breaches are always a possibility.
 If you want to contact me, I currently recommend my [**Twitter**]({{ my.twitter }}) or my [Telegram]({{ my.telegram }})<sup>[NOT SECURE](https://security.stackexchange.com/a/49802/240649)</sup>, where it's easiest for me to respond quickly.
-You can also try sending an email to <code><a class="u-email" rel="me" href="mailto:michael@brooksb.dev">michael@brooksb.dev</a></code>, but spam may prevent me from seeing it.
+You can also try sending an email to <code>[michael@brooksb.dev](mailto:michael@brooksb.dev)</code>, but spam may prevent me from seeing it.
 If you want a more secure option, and we're already [mutuals][mutual], then contact me via [Signal][signal].
 The table given here is supposed to act as more of a *reference* for others (and myself).
 Be warned, there may be mature materials behind any of the links given.
