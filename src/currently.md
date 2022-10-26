@@ -26,4 +26,4 @@ The [life](/life/) section has no schedule.
 
 ## Pluvia
 
-My current goal: at least one Pluvial piece per week.
+My current goal: at least one Pluvian piece per week.
