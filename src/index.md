@@ -13,9 +13,8 @@ It contains a *privacy policy* and a *content disclaimer*.
 
 <div class="p-note">
 
-[I am many things](#links).
-More officially: I am a <a class="p-role" href="https://en.wikipedia.org/wiki/Mathematics">mathematician</a>&nbsp;:mage:.
-Less officially: I am a [programmer]({{ my.github }})&nbsp;:computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism)&nbsp;:people_hugging:, an [essayist](/essays/)&nbsp;:pen:, a [furry](https://en.wikifur.com/wiki/Furry)&nbsp;:raccoon:, and perhaps an [artist](/art/)&nbsp;:black_nib:&nbsp;:art: too.
+More officially: I am a <a class="p-role" href="https://en.wikipedia.org/wiki/Mathematics">mathematician</a>&nbsp;:mage: and a <a class="p-role" href="https://en.wikipedia.org/wiki/Systems_engineering">systems engineer</a>&nbsp;:wrench: in the <a href="https://en.wikipedia.org/wiki/Aerospace_manufacturer">aerospace industry</a>&nbsp;:airplane:.
+Less officially: I am a [programmer]({{ my.github }})&nbsp;:computer:, a [secular humanist](https://en.wikipedia.org/wiki/Secular_humanism)&nbsp;:people_hugging:, an [essayist](/essays/)&nbsp;:pen:, a [furry](/glossary/#furry)&nbsp;:raccoon:, and perhaps an [artist](/art/)&nbsp;:black_nib:&nbsp;:art: too.
 
 </div>
 
