@@ -91,11 +91,34 @@ const config = function (eleventyConfig: any) {
   };
   eleventyConfig.addFilter("tagDate", tagDate);
 
+  // glossary
+  const dd = (content: string) =>
+    "<dl>" +
+    content
+      .split("\n")
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0)
+      .map((s) => {
+        s = s.trim();
+        if (s.startsWith("~")) {
+          // definition
+          s = s.slice(1).trim();
+          return `<dd>${md.renderInline(s)}</dd>`;
+        } else {
+          // term
+          return `<dt id="${s}"><a href="${s}">${s}</a></dt>`;
+        }
+      })
+      .join("\n") +
+    "</dl>";
+  eleventyConfig.addPairedShortcode("DD", dd);
+
   // markdown
   const mdLib = require("markdown-it");
   let md = mdLib({ html: true, linkify: false, typographer: true })
     .use(require("markdown-it-anchor"), {
       slugify: eleventyConfig.getFilter("slugify"),
+      permalink: require("markdown-it-anchor").permalink.headerLink(),
     })
     .use(require("markdown-it-emoji"), {
       defs: {
