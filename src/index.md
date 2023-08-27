@@ -51,7 +51,7 @@ Generally speaking, I am a supporter of
 
 Here are a bunch of links to my primary accounts across many services (ordered alphabetically).
 Note that I barely access most of these accounts.
-**Critically, you should only assume I had control over an account if it listed here explicitly.**
+**Critically, you should only assume I had control over an account if it is listed here explicitly.**
 However, this does not imply that I still control the account as security breaches are always a possibility.
 If you want to contact me, I currently recommend my [**Twitter**]({{ my.twitter }}) or my [Telegram]({{ my.telegram }})<sup>[NOT SECURE](https://security.stackexchange.com/a/49802/240649)</sup>, where it's easiest for me to respond quickly.
 You can also try sending an email to <code>[michael@brooksb.dev](mailto:michael@brooksb.dev)</code>, but spam may prevent me from seeing it.
