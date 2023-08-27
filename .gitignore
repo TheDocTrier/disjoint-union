@@ -1,8 +1,10 @@
+/src/.gitignore
+
 # yarn
 .pnp.*
 .yarn/*
 !.yarn/patches
-!.yarn/plugins
+#!.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
