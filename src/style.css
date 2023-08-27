@@ -39,3 +39,25 @@ a.external-link {
 .toc ul {
   margin: 0;
 }
+
+/* Formatting Guide */
+#guide-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#guide-list li {
+  background-color: #ccc8;
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.35rem;
+}
+
+/* Formatting Glossary */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0.5rem 1rem;
+}
