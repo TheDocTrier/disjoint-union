@@ -93,7 +93,9 @@ layout: main-layout
   </div>
 
   <!-- Created Date -->
+  {% if date %}
   <div>Created: {{ date | tagDate("dt-published") | safe }}</div>
+  {% endif %}
 
   <!-- Updated Date -->
   {% if updated %}
