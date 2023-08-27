@@ -4,7 +4,7 @@ title: Life
 tags: feed
 pagination:
   data: collections.life
-  renderEmpty: true
+  generatePageOnEmptyData: true
 ---
 
 A guide to my life.

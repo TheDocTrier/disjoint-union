@@ -4,7 +4,7 @@ title: Art
 tags: feed
 pagination:
   data: collections.art
-  renderEmpty: true
+  generatePageOnEmptyData: true
 ---
 
 A guide to my art.

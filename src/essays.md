@@ -4,7 +4,7 @@ title: Essays
 tags: feed
 pagination:
   data: collections.essay
-  renderEmpty: true
+  generatePageOnEmptyData: true
 ---
 
 A guide to my essays.
