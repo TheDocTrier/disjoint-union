@@ -53,8 +53,7 @@ Here are a bunch of links to my primary accounts across many services (ordered a
 Note that I barely access most of these accounts.
 **Critically, you should only assume I had control over an account if it is listed here explicitly.**
 However, this does not imply that I still control the account as security breaches are always a possibility.
-If you want to contact me, I currently recommend my [**Twitter**]({{ my.twitter }}) or my [Telegram]({{ my.telegram }})<sup>[NOT SECURE](https://security.stackexchange.com/a/49802/240649)</sup>, where it's easiest for me to respond quickly.
-You can also try sending an email to <code>[michael@brooksb.dev](mailto:michael@brooksb.dev)</code>, but spam may prevent me from seeing it.
+If you want to contact me, I recommend sending me an email, <code>[michael@brooksb.dev](mailto:michael@brooksb.dev)</code>.
 If you want a more secure option, and we're already [mutuals][mutual], then contact me via [Signal][signal].
 The table given here is supposed to act as more of a *reference* for others (and myself).
 Be warned, there may be mature materials behind any of the links given.
@@ -80,11 +79,13 @@ Be warned, there may be mature materials behind any of the links given.
 | Sourcehut             | [thedoctrier]({{ my.sourcehut }})                |
 | [Signal][signal]      | Must be mutuals.                                 |
 | Stack Exchange        | [TheDocTrier]({{ my.stackexchange }})            |
-| Telegram              | [TheDocTrier]({{ my.telegram }})                 |
+| Telegram\*            | [TheDocTrier]({{ my.telegram }})\*               |
 | Twitch                | [TheDocTrier]({{ my.twitch }})                   |
 | Twitter               | {% rel "me", "TheDocTrier", my.twitter %}        |
 | WikiFur               | [TheDocTrier]({{ my.wikifur }})                  |
 | Wikipedia             | [TheDocTrier]({{ my.wikipedia }})                |
+
+\* [Telegram should not be considered secure.](https://security.stackexchange.com/a/49802/240649)
 
 [signal]: https://signal.org
 [mutual]: https://web.archive.org/web/20200819071744/https://www.urbandictionary.com/define.php?term=Mutual
